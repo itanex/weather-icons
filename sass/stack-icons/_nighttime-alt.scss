@@ -1,0 +1,420 @@
+
+
+.#{$prefix}-night-alt-clear {
+  &::before {
+    content: '\F---';
+    color: $part-moon-color;
+  }
+}
+
+.#{$prefix}-lunar-eclipse {
+  &::before {
+    content: '\F---';
+    color: $part-moon-color;
+  }
+
+  &::after {
+    content: '\F---';
+    color: $sun-color;
+  }
+}
+
+.#{$prefix}-night-alt-cloudy {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  &::after {
+    content: '\F100';
+    color: $cloud-color;
+  }
+}
+
+.#{$prefix}-night-alt-cloudy-gusts {
+  &::before {
+    content: '\F109';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F102';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F121';
+    color: $wind-color;
+  }
+}
+
+.#{$prefix}-night-alt-cloudy-windy {
+  &::before {
+    content: '\F109';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F102';
+      color: $cloud-color;
+    }
+  }
+ 
+  &::after {
+    content: '\F120';
+    color: $wind-color;
+    animation-name: shake;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.#{$prefix}-night-alt-fog {
+  &::before {
+    content: '\F109';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F103';
+      color: $cloud-color;
+    }
+  }
+
+  &::after {
+    content: '\F122';
+    color: $fog-color;
+  }
+}
+
+.#{$prefix}-night-alt-hail {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F110';
+    color: $hail-color;
+  }
+}
+
+.#{$prefix}-night-alt-lightning {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F133';
+    color: $lightning-color;
+    animation: lightning 2s linear infinite;
+  }
+}
+
+.#{$prefix}-night-alt-rain {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F118';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-rain-mix {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F114';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-rain-wind {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F111';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-showers {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F112';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-sleet {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F124';
+    color: $hail-color;
+  }
+}
+
+.#{$prefix}-night-alt-sleet-storm {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F124';
+    color: $hail-color;
+  }
+}
+
+.#{$prefix}-night-alt-snow {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F116';
+    color: $hail-color;
+  }
+}
+
+.#{$prefix}-night-alt-snow-thunderstorm {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+    
+    &::after {
+      content: '\F125';
+      color: $lightning-color;
+      animation: lightning 2s linear infinite;
+    }
+  }
+  
+  &::after {
+    content: '\F126';
+    color: $hail-color;
+  }
+}
+
+.#{$prefix}-night-alt-snow-wind {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+    content: '\F117';
+    color: $hail-color;
+  }
+}
+
+.#{$prefix}-night-alt-sprinkle {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+  }
+
+  &::after {
+    content: '\F123';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-storm-showers {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+    
+    &::after {
+      content: '\F125';
+      color: $lightning-color;
+      animation: lightning 2s linear infinite;
+    }
+  }
+  
+  &::after {
+    content: '\F129';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-sunny-overcast {
+  &::before {
+    content: '\F---';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F---';
+      color: $cloud-color;
+    }
+  }
+  
+  &::after {
+      content: '\F---';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-thunderstorm {
+  &::before {
+    content: '\F108';
+    color: $part-moon-color;
+  }
+  
+  > span {
+    &::before {
+      content: '\F101';
+      color: $cloud-color;
+    }
+    
+    &::after {
+      content: '\F125';
+      color: $lightning-color;
+      animation: lightning 2s linear infinite;
+    }
+  }
+  
+  &::after {
+    content: '\F128';
+    color: $rain-color;
+  }
+}
+
+.#{$prefix}-night-alt-partly-cloudy {
+  &::before {
+    content: '\F135';
+    color: $full-moon-color;
+  }
+  
+  &::after {
+    content: '\F134';
+    color: $cloud-color;
+  }
+}
+
+
+.#{$prefix}-night-alt-cloudy-high {
+  &::before {
+    content: '\F---';
+    color: $part-moon-color;
+  }
+
+  &::after {
+    content: '\F---';
+    color: $cloud-color;
+  }
+}

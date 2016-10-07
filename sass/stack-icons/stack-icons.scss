@@ -1,0 +1,91 @@
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Updated October 5, 3026
+ *  Colorized varients of Weather Icons
+ *  Author - Bryan Wood - http://github.com/itanex
+ */
+
+@mixin stackIconClass ($selector, $glyph1, $glyph2: null, $glyph3: null, $glyph4: null) {
+  .#{$selector} {
+    &::before {
+      @include glyphStyle($glyph1);
+    }
+    
+    @if $glyph2 != null or $glyph3 != null {
+      
+      > span {
+        @if $glyph2 != null {
+          &::before {
+              @include glyphStyle($glyph2);
+          }
+        }
+  
+        @if $glyph3 != null {
+          &::after {
+            @include glyphStyle($glyph3);
+          }
+        }
+      }
+      
+    }
+    
+    @if $glyph4 != null {
+      &::after {
+        @include glyphStyle($glyph4);
+      }
+    }
+  }
+}
+
+@mixin glyphStyle ($glyph){
+    color: map-get($glyph, color);
+    content: map-get($glyph, content);
+
+    @include getAdditional($glyph);
+    @include getAnimation($glyph)
+}
+
+@mixin getAdditional ($glyph) {
+    @if map-has-key($glyph, additional) {
+      /* additional */
+      @include getDeclarations(map-get($glyph, additional));
+    }
+}
+
+@mixin getAnimation ($glyph) {
+    @if map-has-key($glyph, animation) {
+      /* animation */
+      @include getDeclarations(map-get($glyph, animation));
+    }
+}
+
+@function buildSelector($prefix, $phrase, $append: "") {
+  @if $append == "" {
+    @return $prefix + '-' + $phrase
+  } @else {
+    @return $prefix + '-' + $phrase + '-' + $append
+  } 
+}
+
+$prefix: 'wi-stk';
+
+$sun-color: #ff7a00;
+$moon-color: #bbb;
+
+$cloud-color: #626262;
+
+$wind-color: #3eaf3e;
+$fog-color: #48ceb1;
+$rain-color: #0281b5;
+$hail-color: #a5d2e4;
+$snow-color: #a5d2e4;
+$lightning-color: #efeb20;
+
+@import 'stacked-icon';
+@import 'animations';
+@import 'daytime';
+@import 'nighttime-alt';
+@import 'nighttime';
+@import 'neutral';
+@import 'natural-disasters';
+@import 'maritime';

@@ -1,0 +1,62 @@
+
+/* any class that starts with 'st-#{$prefix}-' */
+
+[class*='#{$prefix}-'] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    
+    /* child elements absolute */
+    position: relative;
+    /* remove inline-block white-space */
+    
+    /* if not already universally applied */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    /* units used in font: 1em = 2048, icons 2400 wide, so icons are 1.171875em (2400/2048). Add padding x2 to get size: */
+    height: 1.6em;
+    width: 1.6em;
+    
+    /* text hidden old-school */
+    text-align: left;
+    text-indent: -9999px;
+
+    // adjust line-height because bootstrap normalizes it outside expectation
+    line-height: normal;
+}
+/* position:absolute stacks pseudo elements - extra &lt;span> in markup = 2 extra pseudo elements */
+
+[class*='#{$prefix}-']::before,
+[class*='#{$prefix}-']::after,
+[class*='#{$prefix}-'] span::before,
+[class*='#{$prefix}-'] span::after {
+    display: block;
+    position: absolute;
+    white-space: normal;
+
+    /* match padding above */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* undo text hidden */
+    text-indent: 0;
+
+    /* inherits size from parent, ems cascade */
+    font-size: 1em;
+    
+    font-weight: 400 !important;
+    font-style: normal !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+
+    /* screenreaders */
+    speak: none;
+
+    /* transitions here */
+    padding: 5px 0 0 5px;
+}

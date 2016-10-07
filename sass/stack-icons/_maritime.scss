@@ -1,0 +1,47 @@
+.#{$prefix}-small-craft-advisory {
+  &::before {
+    content: '\F---';
+    color: $sun-color;
+  }
+
+  &::after {
+    content: '\F---';
+    color: $cloud-color;
+  }
+}
+
+.#{$prefix}-gale-warning {
+  &::before {
+    content: '\F---';
+    color: $sun-color;
+  }
+
+  &::after {
+    content: '\F---';
+    color: $cloud-color;
+  }
+}
+
+.#{$prefix}-storm-warning {
+  &::before {
+    content: '\F---';
+    color: $sun-color;
+  }
+
+  &::after {
+    content: '\F---';
+    color: $cloud-color;
+  }
+}
+
+.#{$prefix}-hurricane-warning {
+  &::before {
+    content: '\F---';
+    color: $sun-color;
+  }
+
+  &::after {
+    content: '\F---';
+    color: $cloud-color;
+  }
+}
