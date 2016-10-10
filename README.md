@@ -17,6 +17,17 @@ The icons are displayed by using an `i` element and adding the base class `wi` a
 
 To add a modifier, include the class you want after the icon name, which looks like `<i class="wi wi-day-sunny wi-flip-vertical"></i>`. You can flip, rotate, or add a fixed width. See it all at [http://weathericons.io](http://weathericons.io).
 
+## Stack Icon (Full Color)
+
+Most of the base icons for weather has been converted to support a full color font solution.
+
+Usage:
+```HTML
+  <i class="wi wi-stk-day-cloudy"><span></span></i>
+```
+
+The SASS supports color variables so you can change them if you wish and compile them into your own SASS solution.
+
 ## API Usage
 
 This set includes companion CSS files for popular weather service API. Presently there are mappings for Forecast.io, Open Weather Map, World Meteorological Organization, Weather Underground, and Yahoo. Check the [API List](https://erikflowers.github.io/weather-icons/api-list.html) to see the class names.
@@ -31,7 +42,13 @@ Included in the set as well are aliases to point to cardinal directions. They wo
 If you feel so inclined to add icon ideas, icon art, or other fixes/changes to how the package works, feel free to help!
 
 ## Credit
-The icon designs are originally by [Lukas Bischoff](http://www.twitter.com/artill). Icon art for v1.1 forward, HTML, Less, and CSS are by [me (Erik)](http://www.helloerik.com).
+The icon designs are originally by [Lukas Bischoff](http://www.twitter.com/artill). 
+
+Icon art for v1.1 forward, HTML, Less, and CSS are by [me (Erik)](http://www.helloerik.com).
+
+Stack Icon based on stackicon by [Parker Bennett](https://github.com/parkerbennett/stackicons).
+
+Stack Icon work by [Bryan Wood](https://github.com/itanex/).
 
 ## Licensing
 
