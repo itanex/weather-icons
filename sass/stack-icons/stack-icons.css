@@ -1,0 +1,1364 @@
+@charset "UTF-8";
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Updated October 5, 3026
+ *  Colorized varients of Weather Icons
+ *  Author - Bryan Wood - http://github.com/itanex
+ */
+/*!
+ *  Stackicons
+ *  Reference: https://github.com/parkerbennett/stackicons
+ *  Original Author: Parker Bennett
+ *
+ *  Stacking Solution
+ *  Author: Bryan Wood - http://github.com/itanex
+ *  Modified Stackicon solution to work with Weather Icons
+ */
+[class*='wi-stk-'] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  /* child elements absolute */
+  position: relative;
+  /* remove inline-block white-space */
+  /* if not already universally applied */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* units used in font: 1em = 2048, icons 2400 wide, so icons are 1.171875em (2400/2048). Add padding x2 to get size: */
+  height: 1.6em;
+  width: 1.6em;
+  /* text hidden old-school */
+  text-align: left;
+  text-indent: -9999px;
+  line-height: normal; }
+
+[class*='wi-stk-']::before, [class*='wi-stk-']::after,
+[class*='wi-stk-'] span::before,
+[class*='wi-stk-'] span::after {
+  display: block;
+  position: absolute;
+  white-space: normal;
+  /* match padding above */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* undo text hidden */
+  text-indent: 0;
+  /* inherits size from parent, ems cascade */
+  font-size: 1em;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  /* screenreaders */
+  speak: none;
+  /* transitions here */
+  padding: 5px 0 0 5px; }
+
+/*!
+ *  Unkown Glyph Map
+ *  Used to standarize against methods until glyph is available
+ */
+/*!
+ *  Day Glyph Maps
+ */
+/*!
+ *  Night Glyph Maps
+ */
+/*!
+ *  Night (alt) Glyph Maps
+ */
+/*!
+ *  Cloud Glyph Maps
+ */
+/*!
+ *  Wind Glyph Maps
+ */
+/*!
+ *  Fog Glyph Maps
+ */
+/*!
+ *  Hail Glyph Maps
+ */
+/*!
+ *  Lightning Glyph Maps
+ */
+/*!
+ *  Rain Glyph Maps
+ */
+/*!
+ *  Sleet Glyph Maps
+ */
+/*!
+ *  Snow Glyph Maps
+ */
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    transform: translate3d(0, -4px, 0); } }
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1; }
+  25%, 75% {
+    opacity: 0; } }
+
+@keyframes headShake {
+  0% {
+    transform: translateX(0); }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg); }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg); }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg); }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg); }
+  50% {
+    transform: translateX(0); } }
+
+@keyframes pulse {
+  from, to {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); } }
+
+@keyframes rubberBand {
+  from, to {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); } }
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-0.1em, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(0.1em, 0, 0); } }
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg); }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg); }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg); }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg); }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg); } }
+
+@keyframes tada {
+  from, to {
+    transform: scale3d(1, 1, 1); }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); } }
+
+@keyframes wobble {
+  from, to {
+    transform: none; }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); } }
+
+@keyframes lightning {
+  0% {
+    color: #9e9b0b; }
+  21% {
+    color: #9e9b0b; }
+  24% {
+    color: #efeb20; }
+  25% {
+    color: #9e9b0b; }
+  61% {
+    color: #9e9b0b; }
+  63% {
+    color: #efeb20; }
+  65% {
+    color: #9e9b0b; }
+  100% {
+    color: #9e9b0b; } }
+
+@keyframes sunrotating {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes snowrotating {
+  from {
+    transform: rotate(0deg);
+    transform-origin: .71em 1.25em; }
+  to {
+    transform: rotate(360deg);
+    transform-origin: .71em 1.25em; } }
+
+@keyframes snowflakerotating {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Day Time Icons
+ */
+.wi-stk-day-sunny::before {
+  color: #ff7a00;
+  content: "";
+  /* additional */
+  text-align: center;
+  vertical-align: middle;
+  /* animation */
+  animation-name: sunrotating;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-day-cloudy::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-cloudy > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-cloudy-gusts::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-cloudy-gusts > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-cloudy-gusts > span::after {
+  color: #3eaf3e;
+  content: ""; }
+
+.wi-stk-day-cloudy-windy::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-cloudy-windy > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-cloudy-windy > span::after {
+  color: #3eaf3e;
+  content: "";
+  /* animation */
+  animation-name: shake;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-day-fog::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-fog > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-fog > span::after {
+  color: #48ceb1;
+  content: "";
+  /* animation */
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-day-hail::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-hail > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-hail > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-day-lightning::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-lightning > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-lightning > span::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-day-rain::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-rain > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-rain > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-day-rain-mix::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-rain-mix > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-rain-mix > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-day-rain-wind::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-rain-wind > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-rain-wind > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-day-showers::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-showers > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-showers > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-day-sleet::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-sleet > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-sleet > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-day-sleet-storm::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-sleet-storm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-sleet-storm > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-day-snow::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-snow > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-snow > span::after {
+  color: #a5d2e4;
+  content: "";
+  /* animation */
+  animation-name: snowrotating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-day-snow-thunderstorm::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-snow-thunderstorm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-snow-thunderstorm > span::after {
+  color: #a5d2e4;
+  content: "";
+  /* animation */
+  animation-name: snowrotating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-day-snow-thunderstorm::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-day-snow-wind::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-snow-wind > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-snow-wind > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-day-sprinkle::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-sprinkle > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-sprinkle > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-day-storm-showers::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-storm-showers > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-storm-showers > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-day-storm-showers::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-day-thunderstorm::before {
+  color: #ff7a00;
+  content: ""; }
+
+.wi-stk-day-thunderstorm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-day-thunderstorm > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-day-thunderstorm::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-day-sunny-overcast::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-day-haze::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-day-hot::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-day-light-wind::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-day-light-wind::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-day-windy::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-solar-eclipse::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-day-cloudy-high::before {
+  color: #000000;
+  content: "---"; }
+
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Night Time alt Icons
+ */
+.wi-stk-night-alt-clear::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-night-alt-cloudy::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-cloudy > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-cloudy-gusts::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-cloudy-gusts > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-cloudy-gusts > span::after {
+  color: #3eaf3e;
+  content: ""; }
+
+.wi-stk-night-alt-cloudy-windy::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-cloudy-windy > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-cloudy-windy > span::after {
+  color: #3eaf3e;
+  content: "";
+  /* animation */
+  animation-name: shake;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-alt-fog::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-fog > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-fog > span::after {
+  color: #48ceb1;
+  content: "";
+  /* animation */
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-alt-hail::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-hail > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-hail > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-alt-lightning::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-lightning > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-lightning > span::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-alt-rain::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-rain > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-rain > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-alt-rain-mix::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-rain-mix > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-rain-mix > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-alt-rain-wind::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-rain-wind > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-rain-wind > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-alt-showers::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-showers > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-showers > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-alt-sleet::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-sleet > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-sleet > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-alt-sleet-storm::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-sleet-storm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-sleet-storm > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-alt-snow::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-snow > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-snow > span::after {
+  color: #a5d2e4;
+  content: "";
+  /* animation */
+  animation-name: snowrotating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-night-alt-snow-thunderstorm::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-snow-thunderstorm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-snow-thunderstorm > span::after {
+  color: #a5d2e4;
+  content: "";
+  /* animation */
+  animation-name: snowrotating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-night-alt-snow-thunderstorm::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-alt-snow-wind::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-snow-wind > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-snow-wind > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-alt-sprinkle::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-sprinkle > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-sprinkle > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-alt-storm-showers::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-storm-showers > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-storm-showers > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-alt-storm-showers::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-alt-thunderstorm::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-alt-thunderstorm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-alt-thunderstorm > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-alt-thunderstorm::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-alt-overcast::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-night-alt-partly-cloudy::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-night-alt-partly-cloudy::before {
+  content: '\F135';
+  color: #bbb; }
+
+.wi-stk-night-alt-partly-cloudy::after {
+  content: '\F134';
+  color: #626262; }
+
+.wi-stk-night-alt-cloudy-high::before {
+  color: #000000;
+  content: "---"; }
+
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Night Time Icons
+ */
+.wi-stk-night-clear::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-stars::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-night-cloudy::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-cloudy > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-cloudy-gusts::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-cloudy-gusts > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-cloudy-gusts > span::after {
+  color: #3eaf3e;
+  content: ""; }
+
+.wi-stk-night-cloudy-windy::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-cloudy-windy > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-cloudy-windy > span::after {
+  color: #3eaf3e;
+  content: "";
+  /* animation */
+  animation-name: shake;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-fog::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-fog > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-fog > span::after {
+  color: #48ceb1;
+  content: "";
+  /* animation */
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-hail::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-hail > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-hail > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-lightning::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-lightning > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-lightning > span::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-rain::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-rain > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-rain > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-rain-mix::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-rain-mix > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-rain-mix > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-rain-wind::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-rain-wind > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-rain-wind > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-showers::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-showers > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-showers > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-sleet::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-sleet > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-sleet > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-sleet-storm::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-sleet-storm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-sleet-storm > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-snow::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-snow > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-snow > span::after {
+  color: #a5d2e4;
+  content: "";
+  /* animation */
+  animation-name: snowrotating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-night-snow-thunderstorm::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-snow-thunderstorm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-snow-thunderstorm > span::after {
+  color: #a5d2e4;
+  content: "";
+  /* animation */
+  animation-name: snowrotating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-night-snow-thunderstorm::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-snow-wind::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-snow-wind > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-snow-wind > span::after {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-night-sprinkle::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-sprinkle > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-sprinkle > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-storm-showers::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-storm-showers > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-storm-showers > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-storm-showers::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-night-thunderstorm::before {
+  color: #bbb;
+  content: ""; }
+
+.wi-stk-night-thunderstorm > span::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-night-thunderstorm > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-night-thunderstorm::after {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-lunar-eclipse::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-night-cloudy-high::before {
+  color: #000000;
+  content: "---"; }
+
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Neutral Icons
+ */
+.wi-stk-cloud::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-cloudy::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-storm-showers::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-storm-showers > span::before {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-storm-showers > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-thunderstorm::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-thunderstorm > span::before {
+  color: #efeb20;
+  content: "";
+  /* animation */
+  animation-name: lightning;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.wi-stk-thunderstorm > span::after {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-cloudy-gusts::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-cloudy-gusts > span::before {
+  color: #3eaf3e;
+  content: ""; }
+
+.wi-stk-cloudy-windy::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-cloudy-windy > span::before {
+  color: #3eaf3e;
+  content: "";
+  /* animation */
+  animation-name: shake;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-fog::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-fog > span::before {
+  color: #48ceb1;
+  content: "";
+  /* animation */
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.wi-stk-hail::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-hail > span::before {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-rain::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-rain > span::before {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-rain-mix::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-rain-mix > span::before {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-rain-wind::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-rain-wind > span::before {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-showers::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-showers > span::before {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-sleet::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-sleet > span::before {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-snow::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-snow > span::before {
+  color: #a5d2e4;
+  content: "";
+  /* animation */
+  animation-name: snowrotating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-sprinkle::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-sprinkle > span::before {
+  color: #0281b5;
+  content: ""; }
+
+.wi-stk-snow-wind::before {
+  color: #626262;
+  content: ""; }
+
+.wi-stk-snow-wind > span::before {
+  color: #a5d2e4;
+  content: ""; }
+
+.wi-stk-snowflake-cold::before {
+  color: #a5d2e4;
+  content: "";
+  /* additional */
+  text-align: center;
+  vertical-align: middle;
+  /* animation */
+  animation-name: snowflakerotating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.wi-stk-lightning::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-raindrop::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-raindrops::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-windy::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-strong-wind::before {
+  color: #000000;
+  content: "---"; }
+
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Natural Disaster Icons
+ */
+.wi-stk-sandstorm::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-earthquake::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-fire::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-flood::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-meteor::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-tsunami::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-volcano::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-hurricane::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-tornado::before {
+  color: #000000;
+  content: "---"; }
+
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Maritime Icons
+ */
+.wi-stk-small-craft-advisory::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-gale-warning::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-storm-warning::before {
+  color: #000000;
+  content: "---"; }
+
+.wi-stk-hurricane-warning::before {
+  color: #000000;
+  content: "---"; }
+
+/*# sourceMappingURL=stack-icons.css.map */
+
+/*# sourceMappingURL=stack-icons.css.map */

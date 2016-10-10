@@ -1,247 +1,48 @@
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Neutral Icons
+ */
 
+@include stack-icon-class(build-selector($prefix, 'cloud'), $cloud);
 
-.#{$prefix}-cloud {
-    &::before {
-        content: '\F041';
-        color: $cloud-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'cloudy'), $cloud);
 
-.#{$prefix}-cloudy {
-    &::before {
-        content: '\F041';
-        color: $cloud-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'storm-showers'), $cloud-center, $lightning-nudge, $rain-showers-nudge);
 
-.#{$prefix}-storm-showers {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    > span {
-        &::after {
-            content: '\F125';
-            color: $lightning-color;
-            animation: lightning 2s linear infinite;
-        }
-    }
-    
-    &::after {
-        content: '\F129';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'thunderstorm'), $cloud-center, $lightning-nudge, $rain-nudge);
 
-.#{$prefix}-thunderstorm {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    > span {
-        &::after {
-            content: '\F125';
-            color: $lightning-color;
-            animation: lightning 2s linear infinite;
-        }
-    }
-    
-    &::after {
-        content: '\F128';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'cloudy-gusts'), $cloud-left, $gust);
 
-.#{$prefix}-cloudy-gusts {
-    &::before {
-        content: '\F102';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F121';
-        color: $wind-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'cloudy-windy'), $cloud-left, $wind);
 
-.#{$prefix}-cloudy-windy {
-    &::before {
-        content: '\F102';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F120';
-        color: $wind-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'fog'), $cloud-top, $fog);
 
-.#{$prefix}-fog {
-    &::before {
-        content: '\F103';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F122';
-        color: $fog-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'hail'), $cloud-center, $hail);
 
-.#{$prefix}-hail {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F110';
-        color: $hail-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'rain'), $cloud-center, $rain);
 
-.#{$prefix}-rain {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F118';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'rain-mix'), $cloud-center, $rain-mix);
 
-.#{$prefix}-rain-mix {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F114';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'rain-wind'), $cloud-center, $rain-wind);
 
-.#{$prefix}-rain-wind {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F111';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'showers'), $cloud-center, $rain-showers);
 
-.#{$prefix}-showers {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F112';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'sleet'), $cloud-center, $sleet);
 
-.#{$prefix}-sleet {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F124';
-        color: $hail-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'snow'), $cloud-center, $snow);
 
-.#{$prefix}-snow {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F116';
-        color: $hail-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'sprinkle'), $cloud-center, $rain-sprinkles);
 
-.#{$prefix}-sprinkle {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F123';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'snow-wind'), $cloud-center, $snow-wind);
 
-.#{$prefix}-snow-wind {
-    &::before {
-        content: '\F101';
-        color: $cloud-color;
-    }
-    
-    &::after {
-        content: '\F117';
-        color: $hail-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'snowflake-cold'), $snowflake);
 
-.#{$prefix}-snowflake-cold {
-    &::before {
-        content: '\F076';
-        text-align: center;
-        vertical-align: middle;
-        color: $snow-color;
-        animation-name: snowflakerotating;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'lightning'), $unknown);
 
-.#{$prefix}-lightning {
-    &::before {
-        content: '\F---';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'raindrop'), $unknown);
 
-.#{$prefix}-raindrop {
-    &::before {
-        content: '\F---';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'raindrops'), $unknown);
 
-.#{$prefix}-raindrops {
-    &::before {
-        content: '\F---';
-        color: $rain-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'windy'), $unknown);
 
-.#{$prefix}-windy {
-    &::before {
-        content: '\F---';
-        color: $wind-color;
-    }
-}
-
-.#{$prefix}-strong-wind {
-    &::before {
-        content: '\F---';
-        color: $wind-color;
-    }
-}
+@include stack-icon-class(build-selector($prefix, 'strong-wind'), $unknown);

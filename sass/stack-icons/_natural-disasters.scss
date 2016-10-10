@@ -1,108 +1,22 @@
-.#{$prefix}-sandstorm {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Natural Disaster Icons
+ */
 
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'sandstorm'), $unknown);
 
-.#{$prefix}-earthquake {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
+@include stack-icon-class(build-selector($prefix, 'earthquake'), $unknown);
 
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'fire'), $unknown);
 
-.#{$prefix}-fire {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
+@include stack-icon-class(build-selector($prefix, 'flood'), $unknown);
 
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'meteor'), $unknown);
 
-.#{$prefix}-flood {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
+@include stack-icon-class(build-selector($prefix, 'tsunami'), $unknown);
 
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'volcano'), $unknown);
 
-.#{$prefix}-meteor {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
+@include stack-icon-class(build-selector($prefix, 'hurricane'), $unknown);
 
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
-
-.#{$prefix}-tsunami {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
-
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
-
-.#{$prefix}-volcano {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
-
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
-
-.#{$prefix}-hurricane {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
-
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
-
-.#{$prefix}-tornado {
-  &::before {
-    content: '\F---';
-    color: $sun-color;
-  }
-
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
-
+@include stack-icon-class(build-selector($prefix, 'tornado'), $unknown);

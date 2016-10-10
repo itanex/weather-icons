@@ -1,403 +1,56 @@
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Night Time alt Icons
+ */
 
+@include stack-icon-class(build-selector($prefix, 'night-alt-clear'), $unknown);
 
-.#{$prefix}-night-alt-clear {
-  &::before {
-    content: '\F---';
-    color: $part-moon-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-cloudy'), $moon-alt-behind, $cloud-whole);
 
-.#{$prefix}-lunar-eclipse {
-  &::before {
-    content: '\F---';
-    color: $part-moon-color;
-  }
+@include stack-icon-class(build-selector($prefix, 'night-alt-cloudy-gusts'), $moon-alt-behind-nudge, $cloud-left, $gust);
 
-  &::after {
-    content: '\F---';
-    color: $sun-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-cloudy-windy'), $moon-alt-behind-nudge, $cloud-left, $wind);
 
-.#{$prefix}-night-alt-cloudy {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  &::after {
-    content: '\F100';
-    color: $cloud-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-fog'), $moon-alt-behind-nudge, $cloud-left, $fog);
 
-.#{$prefix}-night-alt-cloudy-gusts {
-  &::before {
-    content: '\F109';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F102';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F121';
-    color: $wind-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-hail'), $moon-alt-behind, $cloud-center, $hail);
 
-.#{$prefix}-night-alt-cloudy-windy {
-  &::before {
-    content: '\F109';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F102';
-      color: $cloud-color;
-    }
-  }
- 
-  &::after {
-    content: '\F120';
-    color: $wind-color;
-    animation-name: shake;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-lightning'), $moon-alt-behind, $cloud-center, $lightning);
 
-.#{$prefix}-night-alt-fog {
-  &::before {
-    content: '\F109';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F103';
-      color: $cloud-color;
-    }
-  }
+@include stack-icon-class(build-selector($prefix, 'night-alt-rain'), $moon-alt-behind, $cloud-center, $rain);
 
-  &::after {
-    content: '\F122';
-    color: $fog-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-rain-mix'), $moon-alt-behind, $cloud-center, $rain-mix);
 
-.#{$prefix}-night-alt-hail {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F110';
-    color: $hail-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-rain-wind'), $moon-alt-behind, $cloud-center, $rain-wind);
 
-.#{$prefix}-night-alt-lightning {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F133';
-    color: $lightning-color;
-    animation: lightning 2s linear infinite;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-showers'), $moon-alt-behind, $cloud-center, $rain-showers);
 
-.#{$prefix}-night-alt-rain {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F118';
-    color: $rain-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-sleet'), $moon-alt-behind, $cloud-center, $sleet);
 
-.#{$prefix}-night-alt-rain-mix {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F114';
-    color: $rain-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-sleet-storm'), $moon-alt-behind, $cloud-center, $sleet);
 
-.#{$prefix}-night-alt-rain-wind {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F111';
-    color: $rain-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-snow'), $moon-alt-behind, $cloud-center, $snow);
 
-.#{$prefix}-night-alt-showers {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F112';
-    color: $rain-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-snow-thunderstorm'), $moon-alt-behind, $cloud-center, $snow, $lightning-nudge);
 
-.#{$prefix}-night-alt-sleet {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F124';
-    color: $hail-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-snow-wind'), $moon-alt-behind, $cloud-center, $snow-wind);
 
-.#{$prefix}-night-alt-sleet-storm {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F124';
-    color: $hail-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-sprinkle'), $moon-alt-behind, $cloud-center, $rain-sprinkles);
 
-.#{$prefix}-night-alt-snow {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F116';
-    color: $hail-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-storm-showers'), $moon-alt-behind, $cloud-center, $rain-showers-nudge, $lightning-nudge);
 
-.#{$prefix}-night-alt-snow-thunderstorm {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-    
-    &::after {
-      content: '\F125';
-      color: $lightning-color;
-      animation: lightning 2s linear infinite;
-    }
-  }
-  
-  &::after {
-    content: '\F126';
-    color: $hail-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-thunderstorm'), $moon-alt-behind, $cloud-center, $rain-nudge, $lightning-nudge);
 
-.#{$prefix}-night-alt-snow-wind {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-    content: '\F117';
-    color: $hail-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-overcast'), $unknown);
 
-.#{$prefix}-night-alt-sprinkle {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-  }
+@include stack-icon-class(build-selector($prefix, 'night-alt-partly-cloudy'), $unknown);
 
-  &::after {
-    content: '\F123';
-    color: $rain-color;
-  }
-}
-
-.#{$prefix}-night-alt-storm-showers {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-    
-    &::after {
-      content: '\F125';
-      color: $lightning-color;
-      animation: lightning 2s linear infinite;
-    }
-  }
-  
-  &::after {
-    content: '\F129';
-    color: $rain-color;
-  }
-}
-
-.#{$prefix}-night-alt-sunny-overcast {
-  &::before {
-    content: '\F---';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F---';
-      color: $cloud-color;
-    }
-  }
-  
-  &::after {
-      content: '\F---';
-    color: $rain-color;
-  }
-}
-
-.#{$prefix}-night-alt-thunderstorm {
-  &::before {
-    content: '\F108';
-    color: $part-moon-color;
-  }
-  
-  > span {
-    &::before {
-      content: '\F101';
-      color: $cloud-color;
-    }
-    
-    &::after {
-      content: '\F125';
-      color: $lightning-color;
-      animation: lightning 2s linear infinite;
-    }
-  }
-  
-  &::after {
-    content: '\F128';
-    color: $rain-color;
-  }
-}
+// @include stack-icon-class(build-selector($prefix, 'night-alt-partly-cloudy'), $moon-alt-behind, $cloud-center, $snow);
 
 .#{$prefix}-night-alt-partly-cloudy {
   &::before {
     content: '\F135';
-    color: $full-moon-color;
+    color: $moon-color;
   }
   
   &::after {
@@ -406,15 +59,4 @@
   }
 }
 
-
-.#{$prefix}-night-alt-cloudy-high {
-  &::before {
-    content: '\F---';
-    color: $part-moon-color;
-  }
-
-  &::after {
-    content: '\F---';
-    color: $cloud-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-cloudy-high'), $unknown);

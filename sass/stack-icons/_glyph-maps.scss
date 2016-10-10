@@ -1,0 +1,241 @@
+
+/*!
+ *  Unkown Glyph Map
+ *  Used to standarize against methods until glyph is available
+ */
+$unknown: (
+  content: '\F---',
+  color: #000000,
+);
+
+/*!
+ *  Day Glyph Maps
+ */
+$sunny: (
+  content: '\F00d',
+  color: $sun-color,
+  additional: (
+    text-align: center,
+    vertical-align: middle,
+  ),
+  animation: (
+    animation-name: sunrotating,
+    animation-duration: 30s,
+    animation-iteration-count: infinite,
+    animation-timing-function: linear,
+  ),
+);
+
+$sun-behind: (
+  content: '\F104',
+  color: $sun-color,
+);
+
+$sun-behind-nudge: (
+  content: '\F105',
+  color: $sun-color,
+);
+
+/*!
+ *  Night Glyph Maps
+ */
+$moon-behind: (
+  content: '\F106',
+  color: $moon-color,
+);
+
+$moon-behind-nudge: (
+  content: '\F107',
+  color: $moon-color,
+);
+
+
+/*!
+ *  Night (alt) Glyph Maps
+ */
+$moon-alt-behind: (
+  content: '\F108',
+  color: $moon-color,
+);
+
+$moon-alt-behind-nudge: (
+  content: '\F109',
+  color: $moon-color,
+);
+
+/*!
+ *  Cloud Glyph Maps
+ */
+$cloud: (
+  content: '\F041',
+  color: $cloud-color,
+);
+
+$cloud-whole: (
+  content: '\F100',
+  color: $cloud-color,
+);
+
+$cloud-center: (
+  content: '\F101',
+  color: $cloud-color,
+);
+
+$cloud-left: (
+  content: '\F102',
+  color: $cloud-color,
+);
+
+$cloud-top: (
+  content: '\F103',
+  color: $cloud-color,
+);
+
+$cloud-overcast: (
+  content: '\F134',
+  color: $cloud-color,
+);
+
+/*!
+ *  Wind Glyph Maps
+ */
+$gust: (
+  content: '\F121',
+  color: $wind-color,
+);
+
+$wind: (
+  content: '\F120',
+  color: $wind-color,
+  animation: (
+    animation-name: shake,
+    animation-duration: 10s,
+    animation-iteration-count: infinite,
+  )
+);
+
+/*!
+ *  Fog Glyph Maps
+ */
+$fog: (
+  content: '\F122',
+  color: $fog-color,
+  animation: (
+    animation-name: pulse,
+    animation-duration: 2s,
+    animation-iteration-count: infinite,
+  )
+);
+
+/*!
+ *  Hail Glyph Maps
+ */
+$hail: (
+  content: '\F110',
+  color: $hail-color,
+);
+
+/*!
+ *  Lightning Glyph Maps
+ */
+$lightning: (
+  content: '\F133',
+  color: $lightning-color,
+  animation: (
+    animation-name: lightning,
+    animation-duration: 2s,
+    animation-timing-function: linear,
+    animation-iteration-count: infinite,
+  )
+);
+
+$lightning-nudge: (
+  content: '\F125',
+  color: $lightning-color,
+  animation: (
+    animation-name: lightning,
+    animation-duration: 2s,
+    animation-timing-function: linear,
+    animation-iteration-count: infinite,
+  )
+);
+
+/*!
+ *  Rain Glyph Maps
+ */
+$rain: (
+  content: '\F118',
+  color: $rain-color,
+);
+
+$rain-mix: (
+  content: '\F114',
+  color: $rain-color,
+);
+
+$rain-wind: (
+  content: '\F111',
+  color: $rain-color,
+);
+
+$rain-showers: (
+  content: '\F112',
+  color: $rain-color,
+);
+
+$rain-sprinkles: (
+  content: '\F123',
+  color: $rain-color,
+);
+
+$rain-nudge: (
+  content: '\F128',
+  color: $rain-color,
+);
+
+$rain-showers-nudge: (
+  content: '\F129',
+  color: $rain-color,
+);
+
+/*!
+ *  Sleet Glyph Maps
+ */
+$sleet: (
+  content: '\F124',
+  color: $hail-color,
+);
+
+/*!
+ *  Snow Glyph Maps
+ */
+$snow: (
+  content: '\F116',
+  color: $snow-color,
+  animation: (
+    animation-name: snowrotating,
+    animation-duration: 4s,
+    animation-iteration-count: infinite,
+    animation-timing-function: linear,
+  )
+);
+
+$snow-wind: (
+  content: '\F117',
+  color: $snow-color,
+);
+
+$snowflake: (
+  content: '\F076',
+  color: $snow-color,
+  additional: (
+    text-align: center,
+    vertical-align: middle,
+  ),
+  animation: (
+    animation-name: snowflakerotating,
+    animation-duration: 3s,
+    animation-iteration-count: infinite,
+    animation-timing-function: linear,
+  )
+);

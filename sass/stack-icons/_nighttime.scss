@@ -1,0 +1,48 @@
+/*!
+ *  Weather Icons - Stacked Icon
+ *  Night Time Icons
+ */
+
+@include stack-icon-class(build-selector($prefix, 'night-clear'), $unknown);
+
+@include stack-icon-class(build-selector($prefix, 'stars'), $unknown);
+
+@include stack-icon-class(build-selector($prefix, 'night-cloudy'), $moon-behind, $cloud-whole);
+
+@include stack-icon-class(build-selector($prefix, 'night-cloudy-gusts'), $moon-behind-nudge, $cloud-left, $gust);
+
+@include stack-icon-class(build-selector($prefix, 'night-cloudy-windy'), $moon-behind-nudge, $cloud-left, $wind);
+
+@include stack-icon-class(build-selector($prefix, 'night-fog'), $moon-behind-nudge, $cloud-left, $fog);
+
+@include stack-icon-class(build-selector($prefix, 'night-hail'), $moon-behind, $cloud-center, $hail);
+
+@include stack-icon-class(build-selector($prefix, 'night-lightning'), $moon-behind, $cloud-center, $lightning);
+
+@include stack-icon-class(build-selector($prefix, 'night-rain'), $moon-behind, $cloud-center, $rain);
+
+@include stack-icon-class(build-selector($prefix, 'night-rain-mix'), $moon-behind, $cloud-center, $rain-mix);
+
+@include stack-icon-class(build-selector($prefix, 'night-rain-wind'), $moon-behind, $cloud-center, $rain-wind);
+
+@include stack-icon-class(build-selector($prefix, 'night-showers'), $moon-behind, $cloud-center, $rain-showers);
+
+@include stack-icon-class(build-selector($prefix, 'night-sleet'), $moon-behind, $cloud-center, $sleet);
+
+@include stack-icon-class(build-selector($prefix, 'night-sleet-storm'), $moon-behind, $cloud-center, $sleet);
+
+@include stack-icon-class(build-selector($prefix, 'night-snow'), $moon-behind, $cloud-center, $snow);
+
+@include stack-icon-class(build-selector($prefix, 'night-snow-thunderstorm'), $moon-behind, $cloud-center, $snow, $lightning-nudge);
+
+@include stack-icon-class(build-selector($prefix, 'night-snow-wind'), $moon-behind, $cloud-center, $snow-wind);
+
+@include stack-icon-class(build-selector($prefix, 'night-sprinkle'), $moon-behind, $cloud-center, $rain-sprinkles);
+
+@include stack-icon-class(build-selector($prefix, 'night-storm-showers'), $moon-behind, $cloud-center, $rain-showers-nudge, $lightning-nudge);
+
+@include stack-icon-class(build-selector($prefix, 'night-thunderstorm'), $moon-behind, $cloud-center, $rain-nudge, $lightning-nudge);
+
+@include stack-icon-class(build-selector($prefix, 'lunar-eclipse'), $unknown);
+
+@include stack-icon-class(build-selector($prefix, 'night-cloudy-high'), $unknown);

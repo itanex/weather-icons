@@ -5,7 +5,7 @@
  *  Author - Bryan Wood - http://github.com/itanex
  */
 
-@mixin stackIconClass ($selector, $glyph1, $glyph2: null, $glyph3: null, $glyph4: null) {
+@mixin stack-icon-class ($selector, $glyph1, $glyph2: null, $glyph3: null, $glyph4: null) {
   .#{$selector} {
     &::before {
       @include glyphStyle($glyph1);
@@ -37,7 +37,7 @@
   }
 }
 
-@mixin glyphStyle ($glyph){
+@mixin glyphStyle ($glyph) {
     color: map-get($glyph, color);
     content: map-get($glyph, content);
 
@@ -59,11 +59,17 @@
     }
 }
 
-@function buildSelector($prefix, $phrase, $append: "") {
-  @if $append == "" {
-    @return $prefix + '-' + $phrase
+@mixin getDeclarations($declarations) {
+  @each $property, $value in $declarations {
+    #{$property}: $value
+  }
+}
+
+@function build-selector($prefix, $phrase, $append: '') {
+  @if $append == '' {
+    @return $prefix + '-' + $phrase;
   } @else {
-    @return $prefix + '-' + $phrase + '-' + $append
+    @return $prefix + '-' + $phrase + '-' + $append;
   } 
 }
 
@@ -82,6 +88,7 @@ $snow-color: #a5d2e4;
 $lightning-color: #efeb20;
 
 @import 'stacked-icon';
+@import 'glyph-maps';
 @import 'animations';
 @import 'daytime';
 @import 'nighttime-alt';
