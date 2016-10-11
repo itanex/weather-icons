@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stacked Icons</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/weather-icons.css">
+    <link rel="stylesheet" href="/css/weather-icons-wind.css">
+    <link rel="stylesheet" href="/css/weather-icons-stacked.css">
+    <style>
+        body {
+            padding-bottom: 30px;
+            padding-top: 70px;
+        }
+        .tile {
+            display: inline-block;
+
+            height: 100px;
+            width: 235px;
+
+            padding: 10px;
+            margin: 1em;
+        }
+
+        .tile > i {
+            font-size: 3em;
+            position: absolute;
+        }
+
+        .tile.test > i {
+            font-size: 8em;
+        }
+        
+
+        .tile > h5 {
+            left: 70px;
+            position: relative;
+        }
+        
+        .tile > p {
+            position: relative;
+            left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="/">Stacked Icons</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <section>
+            <header>
+                <h1>Test Glyph</h1>
+            </header>
+
+            <div class="tile test">
+                <i class="wi wi-stk-overcast-clouds"><span></span></i>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Daytime</h1>
+            </header>
+
+            <div class="tile">
+                <i class="wi wi-day-sunny"></i>
+                <h5>wi-day-sunny</h5>
+                <p>F00D</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-sunny"><span></span></i>
+                <h5>wi wi-stk-day-sunny</h5>
+                <p>F00D</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-cloudy"></i>
+                <h5>wi-day-cloudy</h5>
+                <p>F002</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-cloudy"><span></span></i>
+                <h5>wi wi-stk-day-cloudy</h5>
+                <p>F100 + F104</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-cloudy-gusts"></i>
+                <h5>wi-day-cloudy-gusts</h5>
+                <p>f000</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-cloudy-gusts"><span></span></i>
+                <h5>wi wi-stk-day-cloudy-gusts</h5>
+                <p>F104 + F102 + F121</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-cloudy-windy"></i>
+                <h5>wi-day-cloudy-windy</h5>
+                <p>F001</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-cloudy-windy"><span></span><span></span></i>
+                <h5>wi wi-stk-day-cloudy-windy</h5>
+                <p>f001</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-fog"></i>
+                <h5>wi-day-fog</h5>
+                <p>F003</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-fog"><span></span></i>
+                <h5>wi wi-stk-day-fog</h5>
+                <p>F104 + F103 + F122</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-hail"></i>
+                <h5>wi-day-hail</h5>
+                <p>f004</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-hail"><span></span></i>
+                <h5>wi wi-stk-day-hail</h5>
+                <p>f004</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-lightning"></i>
+                <h5>wi-day-lightning</h5>
+                <p>f005</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-lightning"><span></span></i>
+                <h5>wi wi-stk-day-lightning</h5>
+                <p>f005</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-rain"></i>
+                <h5>wi-day-rain</h5>
+                <p>f008</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-rain"><span></span></i>
+                <h5>wi wi-stk-day-rain</h5>
+                <p>f008</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-rain-mix"></i>
+                <h5>wi-day-rain-mix</h5>
+                <p>f006</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-rain-mix"><span></span></i>
+                <h5>wi wi-stk-day-rain-mix</h5>
+                <p>f006</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-rain-wind"></i>
+                <h5>wi-day-rain-wind</h5>
+                <p>f007</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-rain-wind"><span></span></i>
+                <h5>wi wi-stk-day-rain-wind</h5>
+                <p>f007</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-showers"></i>
+                <h5>wi-day-showers</h5>
+                <p>f009</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-showers"><span></span></i>
+                <h5>wi wi-stk-day-showers</h5>
+                <p>f009</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-sleet"></i>
+                <h5>wi-day-sleet</h5>
+                <p>f0b2</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-sleet"><span></span></i>
+                <h5>wi-day-sleet</h5>
+                <p>f0b2</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-sleet-storm"></i>
+                <h5>wi-day-sleet-storm</h5>
+                <p>f068</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-sleet-storm"><span></span></i>
+                <h5>wi wi-stk-day-sleet-storm</h5>
+                <p>f068</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-snow"></i>
+                <h5>wi-day-snow</h5>
+                <p>f00a</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-snow"><span></span></i>
+                <h5>wi wi-stk-day-snow</h5>
+                <p>f00a</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-snow-thunderstorm"></i>
+                <h5>wi-day-snow-thunderstorm</h5>
+                <p>f06b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-snow-thunderstorm"><span></span></i>
+                <h5>wi wi-stk-day-snow-thunderstorm</h5>
+                <p>f06b</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-snow-wind"></i>
+                <h5>wi-day-snow-wind</h5>
+                <p>f065</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-snow-wind"><span></span></i>
+                <h5>wi wi-stk-day-snow-wind</h5>
+                <p>f065</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-sprinkle"></i>
+                <h5>wi-day-sprinkle</h5>
+                <p>f00b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-sprinkle"><span></span></i>
+                <h5>wi wi-stk-day-sprinkle</h5>
+                <p>f00b</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-storm-showers"></i>
+                <h5>wi-day-storm-showers</h5>
+                <p>f00e</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-storm-showers"><span></span></i>
+                <h5>wi wi-stk-day-storm-showers</h5>
+                <p>f00e</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-thunderstorm"></i>
+                <h5>wi-day-thunderstorm</h5>
+                <p>f010</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-thunderstorm"><span></span></i>
+                <h5>wi wi-stk-day-thunderstorm</h5>
+                <p>f010</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-haze"></i>
+                <h5>wi-day-haze</h5>
+                <p>f0b6</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-haze"><span></span></i>
+                <h5>wi wi-stk-day-haze</h5>
+                <p>f0b6</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-hot"></i>
+                <h5>wi-hot</h5>
+                <p>f072</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-hot"><span></span></i>
+                <h5>wi wi-stk-day-hot</h5>
+                <p>f072</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-sunny-overcast"></i>
+                <h5>wi-day-sunny-overcast</h5>
+                <p>f00c</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-sunny-overcast"><span></span></i>
+                <h5>wi wi-stk-day-sunny-overcast</h5>
+                <p>f00c</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-light-wind"></i>
+                <h5>wi-day-light-wind</h5>
+                <p>f0c4</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-light-wind"><span></span></i>
+                <h5>wi wi-stk-day-light-wind</h5>
+                <p>f0c4</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-windy"></i>
+                <h5>wi-day-windy</h5>
+                <p>f085</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-windy"><span></span></i>
+                <h5>wi wi-stk-day-windy</h5>
+                <p>f085</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-solar-eclipse"></i>
+                <h5>wi-solar-eclipse</h5>
+                <p>f06e</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-solar-eclipse"><span></span></i>
+                <h5>wi wi-stk-solar-eclipse</h5>
+                <p>f06e</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-day-cloudy-high"></i>
+                <h5>wi-day-cloudy-high</h5>
+                <p>f07d</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-day-cloudy-high"><span></span></i>
+                <h5>wi wi-stk-day-cloudy-high</h5>
+                <p>f07d</p>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Night Time (Full Moon)</h1>
+            </header>
+
+            <div class="tile">
+                <i class="wi wi-night-clear"></i>
+                <h5>wi-night-clear</h5>
+                <p>f02e</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-clear"><span></span></i>
+                <h5>wi wi-stk-night-clear</h5>
+                <p>f02e</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-stars"></i>
+                <h5>wi wi-stk-stars</h5>
+                <p>f077</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-stars"><span></span></i>
+                <h5>wi wi-stk-stars</h5>
+                <p>f077</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-cloudy"></i>
+                <h5>wi-night-cloudy</h5>
+                <p>f031</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-cloudy"><span></span></i>
+                <h5>wi wi-stk-night-cloudy</h5>
+                <p>f031</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-cloudy-gusts"></i>
+                <h5>wi-night-cloudy-gusts</h5>
+                <p>f02f</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-cloudy-gusts"><span></span></i>
+                <h5>wi wi-stk-night-cloudy-gusts</h5>
+                <p>f02f</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-cloudy-windy"></i>
+                <h5>wi-night-cloudy-windy</h5>
+                <p>f030</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-cloudy-windy"><span></span></i>
+                <h5>wi wi-stk-night-cloudy-windy</h5>
+                <p>f030</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-fog"></i>
+                <h5>wi-night-fog</h5>
+                <p>f04a</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-fog"><span></span></i>
+                <h5>wi wi-stk-night-fog</h5>
+                <p>f04a</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-hail"></i>
+                <h5>wi-night-hail</h5>
+                <p>f032</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-hail"><span></span></i>
+                <h5>wi wi-stk-night-hail</h5>
+                <p>f032</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-lightning"></i>
+                <h5>wi-night-lightning</h5>
+                <p>f033</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-lightning"><span></span></i>
+                <h5>wi wi-stk-night-lightning</h5>
+                <p>f033</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-partly-cloudy"></i>
+                <h5>wi-night-partly-cloudy</h5>
+                <p>f083</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-partly-cloudy"><span></span></i>
+                <h5>wi wi-stk-night-partly-cloudy</h5>
+                <p>f036</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-rain-mix"></i>
+                <h5>wi-night-rain-mix</h5>
+                <p>f034</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-rain-mix"><span></span></i>
+                <h5>wi wi-stk-night-rain-mix</h5>
+                <p>f034</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-rain-wind"></i>
+                <h5>wi-night-rain-wind</h5>
+                <p>f035</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-rain-wind"><span></span></i>
+                <h5>wi wi-stk-night-rain-wind</h5>
+                <p>f035</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-showers"></i>
+                <h5>wi-night-showers</h5>
+                <p>f037</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-showers"><span></span></i>
+                <h5>wi wi-stk-night-showers</h5>
+                <p>f037</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-sleet"></i>
+                <h5>wi-night-sleet</h5>
+                <p>f0b3</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-sleet"><span></span></i>
+                <h5>wi wi-stk-night-sleet</h5>
+                <p>f0b3</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-sleet-storm"></i>
+                <h5>wi-night-sleet-storm</h5>
+                <p>f069</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-sleet-storm"><span></span></i>
+                <h5>wi wi-stk-night-sleet-storm</h5>
+                <p>f069</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-snow"></i>
+                <h5>wi-night-snow</h5>
+                <p>f038</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-snow"><span></span></i>
+                <h5>wi wi-stk-night-snow</h5>
+                <p>f038</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-snow"></i>
+                <h5>wi-night-snow</h5>
+                <p>f038</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-snow"><span></span></i>
+                <h5>wi wi-stk-night-snow</h5>
+                <p>f038</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-snow-thunderstorm"></i>
+                <h5>wi-night-snow-thunderstorm</h5>
+                <p>f06c</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-snow-thunderstorm"><span></span></i>
+                <h5>wi wi-stk-night-snow-thunderstorm</h5>
+                <p>f06c</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-snow-wind"></i>
+                <h5>wi-night-snow-wind</h5>
+                <p>f066</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-snow-wind"><span></span></i>
+                <h5>wi wi-stk-night-snow-wind</h5>
+                <p>f066</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-sprinkle"></i>
+                <h5>wi-night-sprinkle</h5>
+                <p>f039</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-sprinkle"><span></span></i>
+                <h5>wi wi-stk-night-sprinkle</h5>
+                <p>f039</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-storm-showers"></i>
+                <h5>wi-night-storm-showers</h5>
+                <p>f03a</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-storm-showers"><span></span></i>
+                <h5>wi wi-stk-night-storm-showers</h5>
+                <p>f03a</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-thunderstorm"></i>
+                <h5>wi-night-thunderstorm</h5>
+                <p>f03b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-thunderstorm"><span></span></i>
+                <h5>wi wi-stk-night-thunderstorm</h5>
+                <p>f03b</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-cloudy-high"></i>
+                <h5>wi-night-cloudy-high</h5>
+                <p>f080</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-cloudy-high"><span></span></i>
+                <h5>wi wi-stk-night-cloudy-high</h5>
+                <p>f080</p>
+            </div>
+
+        </section>
+
+        <section>
+            <header>
+                <h1>Night Time Alt (Partial Moon)</h1>
+            </header>
+
+            <div class="tile">
+                <i class="wi wi-lunar-eclipse"></i>
+                <h5>wi-lunar-eclipse</h5>
+                <p>f070</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-lunar-eclipse"><span></span></i>
+                <h5>wi wi-stk-lunar-eclipse</h5>
+                <p>f070</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-cloudy"></i>
+                <h5>wi-night-alt-cloudy</h5>
+                <p>f086</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-cloudy"><span></span></i>
+                <h5>wi wi-stk-night-alt-cloudy</h5>
+                <p>f086</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-cloudy-gusts"></i>
+                <h5>wi-night-alt-cloudy-gusts</h5>
+                <p>f022</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-cloudy-gusts"><span></span></i>
+                <h5>wi wi-stk-night-alt-cloudy-gusts</h5>
+                <p>f022</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-cloudy-windy"></i>
+                <h5>wi-night-alt-cloudy-windy</h5>
+                <p>f023</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-cloudy-windy"><span></span></i>
+                <h5>wi wi-stk-night-alt-cloudy-windy</h5>
+                <p>f023</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-hail"></i>
+                <h5>wi-night-alt-hail</h5>
+                <p>f024</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-hail"><span></span></i>
+                <h5>wi wi-stk-night-alt-hail</h5>
+                <p>f024</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-lightning"></i>
+                <h5>wi-night-alt-lightning</h5>
+                <p>f025</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-lightning"><span></span></i>
+                <h5>wi wi-stk-night-alt-lightning</h5>
+                <p>f025</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-rain"></i>
+                <h5>wi-night-alt-rain</h5>
+                <p>f028</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-rain"><span></span></i>
+                <h5>wi wi-stk-night-alt-rain</h5>
+                <p>f028</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-rain-mix"></i>
+                <h5>wi-night-alt-rain-mix</h5>
+                <p>f026</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-rain-mix"><span></span></i>
+                <h5>wi wi-stk-night-alt-rain-mix</h5>
+                <p>f026</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-rain-wind"></i>
+                <h5>wi-night-alt-rain-wind</h5>
+                <p>f027</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-rain-wind"><span></span></i>
+                <h5>wi wi-stk-night-alt-rain-wind</h5>
+                <p>f027</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-showers"></i>
+                <h5>wi-night-alt-showers</h5>
+                <p>f029</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-showers"><span></span></i>
+                <h5>wi wi-stk-night-alt-showers</h5>
+                <p>f029</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-sleet"></i>
+                <h5>wi-night-alt-sleet</h5>
+                <p>f0b4</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-sleet"><span></span></i>
+                <h5>wi wi-stk-night-alt-sleet</h5>
+                <p>f0b4</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-sleet-storm"></i>
+                <h5>wi-night-alt-sleet-storm</h5>
+                <p>f06a</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-sleet-storm"><span></span></i>
+                <h5>wi wi-stk-night-alt-sleet-storm</h5>
+                <p>f06a</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-snow"></i>
+                <h5>wi-night-alt-snow</h5>
+                <p>f02a</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-snow"><span></span></i>
+                <h5>wi wi-stk-night-alt-snow</h5>
+                <p>f02a</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-snow-thunderstorm"></i>
+                <h5>wi-night-alt-snow-thunderstorm</h5>
+                <p>f06d</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-snow-thunderstorm"><span></span></i>
+                <h5>wi wi-stk-night-alt-snow-thunderstorm</h5>
+                <p>f06d</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-snow-wind"></i>
+                <h5>wi-night-alt-snow-wind</h5>
+                <p>f067</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-snow-wind"><span></span></i>
+                <h5>wi wi-stk-night-alt-snow-wind</h5>
+                <p>f067</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-sprinkle"></i>
+                <h5>wi-night-alt-sprinkle</h5>
+                <p>f02b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-sprinkle"><span></span></i>
+                <h5>wi wi-stk-night-alt-sprinkle</h5>
+                <p>f02b</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-storm-showers"></i>
+                <h5>wi-night-alt-storm-showers</h5>
+                <p>f02c</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-storm-showers"><span></span></i>
+                <h5>wi wi-stk-night-alt-storm-showers</h5>
+                <p>f02c</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-thunderstorm"></i>
+                <h5>wi-night-alt-thunderstorm</h5>
+                <p>f02d</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-thunderstorm"><span></span></i>
+                <h5>wi wi-stk-night-alt-thunderstorm</h5>
+                <p>f02d</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-cloudy-high"></i>
+                <h5>wi-night-alt-cloudy-high</h5>
+                <p>f07e</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-cloudy-high"><span></span></i>
+                <h5>wi wi-stk-night-alt-cloudy-high</h5>
+                <p>f07e</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-night-alt-partly-cloudy"></i>
+                <h5>wi-night-alt-partly-cloudy</h5>
+                <p>f081</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-night-alt-partly-cloudy"><span></span></i>
+                <h5>wi wi-stk-night-alt-partly-cloudy</h5>
+                <p>f081</p>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Neutral Weather</h1>
+            </header>
+
+            <div class="tile">
+                <i class="wi wi-cloud"></i>
+                <h5>wi-cloud</h5>
+                <p>f041</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-cloud"><span></span></i>
+                <h5>wi wi-stk-cloud</h5>
+                <p>f041</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-cloudy"></i>
+                <h5>wi-cloudy</h5>
+                <p>f013</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-cloudy"><span></span></i>
+                <h5>wi wi-stk-cloudy</h5>
+                <p>f013</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-storm-showers"></i>
+                <h5>wi-storm-showers</h5>
+                <p>f01d</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-storm-showers"><span></span></i>
+                <h5>wi wi-stk-storm-showers</h5>
+                <p>f01d</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-thunderstorm"></i>
+                <h5>wi-thunderstorm</h5>
+                <p>f01e</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-thunderstorm"><span></span></i>
+                <h5>wi wi-stk-thunderstorm</h5>
+                <p>f01e</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-cloudy-gusts"></i>
+                <h5>wi-cloudy-gusts</h5>
+                <p>f011</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-cloudy-gusts"><span></span></i>
+                <h5>wi wi-stk-cloudy-gusts</h5>
+                <p>f011</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-cloudy-windy"></i>
+                <h5>wi-cloudy-windy</h5>
+                <p>f012</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-cloudy-windy"><span></span></i>
+                <h5>wi wi-stk-cloudy-windy</h5>
+                <p>f012</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-fog"></i>
+                <h5>wi-fog</h5>
+                <p>f014</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-fog"><span></span></i>
+                <h5>wi wi-stk-fog</h5>
+                <p>f014</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-hail"></i>
+                <h5>wi-hail</h5>
+                <p>f015</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-hail"><span></span></i>
+                <h5>wi wi-stk-hail</h5>
+                <p>f015</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-rain"></i>
+                <h5>wi-rain</h5>
+                <p>f019</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-rain"><span></span></i>
+                <h5>wi wi-stk-rain</h5>
+                <p>f019</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-rain-mix"></i>
+                <h5>wi-rain-mix</h5>
+                <p>f017</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-rain-mix"><span></span></i>
+                <h5>wi wi-stk-rain-mix</h5>
+                <p>f017</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-rain-wind"></i>
+                <h5>wi-rain-wind</h5>
+                <p>f018</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-rain-wind"><span></span></i>
+                <h5>wi wi-stk-rain-wind</h5>
+                <p>f018</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-showers"></i>
+                <h5>wi-showers</h5>
+                <p>f01a</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-showers"><span></span></i>
+                <h5>wi wi-stk-showers</h5>
+                <p>f01a</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-sleet"></i>
+                <h5>wi-sleet</h5>
+                <p>f0b5</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-sleet"><span></span></i>
+                <h5>wi wi-stk-sleet</h5>
+                <p>f0b5</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-sprinkle"></i>
+                <h5>wi-sprinkle</h5>
+                <p>f01c</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-sprinkle"><span></span></i>
+                <h5>wi wi-stk-sprinkle</h5>
+                <p>f01c</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-snow"></i>
+                <h5>wi-snow</h5>
+                <p>f01b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-snow"><span></span></i>
+                <h5>wi wi-stk-snow</h5>
+                <p>f01b</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-snow-wind"></i>
+                <h5>wi-snow-wind</h5>
+                <p>f064</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-snow-wind"><span></span></i>
+                <h5>wi wi-stk-snow-wind</h5>
+                <p>f064</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-lightning"></i>
+                <h5>wi-lightning</h5>
+                <p>f016</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-lightning"><span></span></i>
+                <h5>wi wi-stk-lightning</h5>
+                <p>f016</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-raindrops"></i>
+                <h5>wi-raindrops</h5>
+                <p>f04e</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-raindrops"><span></span></i>
+                <h5>wi wi-stk-raindrops</h5>
+                <p>f04e</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-raindrop"></i>
+                <h5>wi-raindrop</h5>
+                <p>f078</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-raindrop"><span></span></i>
+                <h5>wi wi-stk-raindrop</h5>
+                <p>f078</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-snowflake-cold"></i>
+                <h5>wi-snowflake-cold</h5>
+                <p>f076</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-snowflake-cold"><span></span></i>
+                <h5>wi wi-stk-snowflake-cold</h5>
+                <p>f076</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-windy"></i>
+                <h5>wi-windy</h5>
+                <p>f021</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-windy"><span></span></i>
+                <h5>wi wi-stk-windy</h5>
+                <p>f021</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-strong-wind"></i>
+                <h5>wi-strong-wind</h5>
+                <p>f050</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-strong-wind"><span></span></i>
+                <h5>wi wi-stk-strong-wind</h5>
+                <p>f050</p>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Natural Disaster</h1>
+            </header>
+
+            <div class="tile">
+                <i class="wi wi-sandstorm"></i>
+                <h5>wi-sandstorm</h5>
+                <p>f082</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-sandstorm"><span></span></i>
+                <h5>wi wi-stk-sandstorm</h5>
+                <p>f082</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-earthquake"></i>
+                <h5>wi-earthquake</h5>
+                <p>f0c6</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-earthquake"><span></span></i>
+                <h5>wi wi-stk-earthquake</h5>
+                <p>f0c6</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-fire"></i>
+                <h5>wi-fire</h5>
+                <p>f0c7</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-fire"><span></span></i>
+                <h5>wi wi-stk-fire</h5>
+                <p>f0c7</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-flood"></i>
+                <h5>wi-flood</h5>
+                <p>f07c</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-flood"><span></span></i>
+                <h5>wi wi-stk-flood</h5>
+                <p>f07c</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-meteor"></i>
+                <h5>wi-meteor</h5>
+                <p>f071</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-meteor"><span></span></i>
+                <h5>wi wi-stk-meteor</h5>
+                <p>f071</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-tsunami"></i>
+                <h5>wi-tsunami</h5>
+                <p>f0c5</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-tsunami"><span></span></i>
+                <h5>wi wi-stk-tsunami</h5>
+                <p>f0c5</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-volcano"></i>
+                <h5>wi-volcano</h5>
+                <p>f0c8</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-volcano"><span></span></i>
+                <h5>wi wi-stk-volcano</h5>
+                <p>f0c8</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-hurricane"></i>
+                <h5>wi-hurricane</h5>
+                <p>f073</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-hurricane"><span></span></i>
+                <h5>wi wi-stk-hurricane</h5>
+                <p>f073</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-tornado"></i>
+                <h5>wi-tornado</h5>
+                <p>f056</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-tornado"><span></span></i>
+                <h5>wi wi-stk-tornado</h5>
+                <p>f056</p>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Maritime</h1>
+            </header>
+            <div class="tile">
+                <i class="wi wi-small-craft-advisory"></i>
+                <h5>wi-small-craft-advisory</h5>
+                <p>f0cc</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-small-craft-advisory"><span></span></i>
+                <h5>wi wi-stk-small-craft-advisory</h5>
+                <p>f0cc</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-gale-warning"></i>
+                <h5>wi-gale-warning</h5>
+                <p>f0cd</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-gale-warning"><span></span></i>
+                <h5>wi wi-stk-gale-warning</h5>
+                <p>f0cd</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-storm-warning"></i>
+                <h5>wi-storm-warning</h5>
+                <p>f0ce</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-storm-warning"><span></span></i>
+                <h5>wi wi-stk-storm-warning</h5>
+                <p>f0ce</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-hurricane-warning"></i>
+                <h5>wi-hurricane-warning</h5>
+                <p>f0cf</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-hurricane-warning"><span></span></i>
+                <h5>wi wi-stk-hurricane-warning</h5>
+                <p>f0cf</p>
+            </div>
+        </section>
+
+        <section style="display:none;">
+            <header>
+                <h1>Miscellaneous</h1>
+            </header>
+
+            <div class="tile">
+                <i class="wi wi-smog"></i>
+                <h5>wi-smog</h5>
+                <p>f074</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-smog"><span></span></i>
+                <h5>wi wi-stk-smog</h5>
+                <p>f074</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-smoke"></i>
+                <h5>wi-smoke</h5>
+                <p>f062</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-smoke"><span></span></i>
+                <h5>wi wi-stk-smoke</h5>
+                <p>f062</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-dust"></i>
+                <h5>wi-dust</h5>
+                <p>f063</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-dust"><span></span></i>
+                <h5>wi wi-stk-dust</h5>
+                <p>f063</p>
+            </div>
+            
+            <div class="tile">
+                <i class="wi wi-wind-direction"></i>
+                <h5>wi-wind-direction</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-stk-wind-direction"><span></span></i>
+                <h5>wi wi-stk-wind-direction</h5>
+                <p>f0b1</p>
+            </div>
+
+            <div class="tile">
+                <i class="wi wi-alien"></i>
+                <h5>wi-alien</h5>
+                <p>f075</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-celsius"></i>
+                <h5>wi-celsius</h5>
+                <p>f03c</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-fahrenheit"></i>
+                <h5>wi-fahrenheit</h5>
+                <p>f045</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-degrees"></i>
+                <h5>wi-degrees</h5>
+                <p>f042</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-thermometer"></i>
+                <h5>wi-thermometer</h5>
+                <p>f055</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-thermometer-exterior"></i>
+                <h5>wi-thermometer-exterior</h5>
+                <p>f053</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-thermometer-internal"></i>
+                <h5>wi-thermometer-internal</h5>
+                <p>f054</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-cloud-down"></i>
+                <h5>wi-cloud-down</h5>
+                <p>f03d</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-cloud-up"></i>
+                <h5>wi-cloud-up</h5>
+                <p>f040</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-cloud-refresh"></i>
+                <h5>wi-cloud-refresh</h5>
+                <p>f03e</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-horizon"></i>
+                <h5>wi-horizon</h5>
+                <p>f047</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-horizon-alt"></i>
+                <h5>wi-horizon-alt</h5>
+                <p>f046</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-sunrise"></i>
+                <h5>wi-sunrise</h5>
+                <p>f051</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-sunset"></i>
+                <h5>wi-sunset</h5>
+                <p>f052</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moonrise"></i>
+                <h5>wi-moonrise</h5>
+                <p>f0c9</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moonset"></i>
+                <h5>wi-moonset</h5>
+                <p>f0ca</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-refresh"></i>
+                <h5>wi-refresh</h5>
+                <p>f04c</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-refresh-alt"></i>
+                <h5>wi-refresh-alt</h5>
+                <p>f04b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-umbrella"></i>
+                <h5>wi-umbrella</h5>
+                <p>f084</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-barometer"></i>
+                <h5>wi-barometer</h5>
+                <p>f079</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-humidity"></i>
+                <h5>wi-humidity</h5>
+                <p>f07a</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-na"></i>
+                <h5>wi-na</h5>
+                <p>f07b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-train"></i>
+                <h5>wi-train</h5>
+                <p>f0cb</p>
+            </div>
+        </section>
+
+        <section style="display:none;">
+            <header>
+                <h1>Moon Phases</h1>
+            </header>
+            <div class="tile">
+                <i class="wi wi-moon-new"></i>
+                <h5>wi-moon-new</h5>
+                <p>f095</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-crescent-1"></i>
+                <h5>wi-moon-waxing-crescent-1</h5>
+                <p>f096</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-crescent-2"></i>
+                <h5>wi-moon-waxing-crescent-2</h5>
+                <p>f097</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-crescent-3"></i>
+                <h5>wi-moon-waxing-crescent-3</h5>
+                <p>f098</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-crescent-4"></i>
+                <h5>wi-moon-waxing-crescent-4</h5>
+                <p>f099</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-crescent-5"></i>
+                <h5>wi-moon-waxing-crescent-5</h5>
+                <p>f09a</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-crescent-6"></i>
+                <h5>wi-moon-waxing-crescent-6</h5>
+                <p>f09b</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moon-first-quarter"></i>
+                <h5>wi-moon-first-quarter</h5>
+                <p>f09c</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-gibbous-1"></i>
+                <h5>wi-moon-waxing-gibbous-1</h5>
+                <p>f09d</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-gibbous-2"></i>
+                <h5>wi-moon-waxing-gibbous-2</h5>
+                <p>f09e</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-gibbous-3"></i>
+                <h5>wi-moon-waxing-gibbous-3</h5>
+                <p>f09f</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-gibbous-4"></i>
+                <h5>wi-moon-waxing-gibbous-4</h5>
+                <p>f0a0</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-gibbous-5"></i>
+                <h5>wi-moon-waxing-gibbous-5</h5>
+                <p>f0a1</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waxing-gibbous-6"></i>
+                <h5>wi-moon-waxing-gibbous-6</h5>
+                <p>f0a2</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moon-full"></i>
+                <h5>wi-moon-full</h5>
+                <p>f0a3</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-gibbous-1"></i>
+                <h5>wi-moon-waning-gibbous-1</h5>
+                <p>f0a4</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-gibbous-2"></i>
+                <h5>wi-moon-waning-gibbous-2</h5>
+                <p>f0a5</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-gibbous-3"></i>
+                <h5>wi-moon-waning-gibbous-3</h5>
+                <p>f0a6</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-gibbous-4"></i>
+                <h5>wi-moon-waning-gibbous-4</h5>
+                <p>f0a7</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-gibbous-5"></i>
+                <h5>wi-moon-waning-gibbous-5</h5>
+                <p>f0a8</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-gibbous-6"></i>
+                <h5>wi-moon-waning-gibbous-6</h5>
+                <p>f0a9</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moon-third-quarter"></i>
+                <h5>wi-moon-third-quarter</h5>
+                <p>f0aa</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-crescent-1"></i>
+                <h5>wi-moon-waning-crescent-1</h5>
+                <p>f0ab</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-crescent-2"></i>
+                <h5>wi-moon-waning-crescent-2</h5>
+                <p>f0ac</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-crescent-3"></i>
+                <h5>wi-moon-waning-crescent-3</h5>
+                <p>f0ad</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-crescent-4"></i>
+                <h5>wi-moon-waning-crescent-4</h5>
+                <p>f0ae</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-crescent-5"></i>
+                <h5>wi-moon-waning-crescent-5</h5>
+                <p>f0af</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-waning-crescent-6"></i>
+                <h5>wi-moon-waning-crescent-6</h5>
+                <p>f0b0</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moon-alt-new"></i>
+                <h5>wi-moon-alt-new</h5>
+                <p>f0eb</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-crescent-1"></i>
+                <h5>wi-moon-alt-waxing-crescent-1</h5>
+                <p>f0d0</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-crescent-2"></i>
+                <h5>wi-moon-alt-waxing-crescent-2</h5>
+                <p>f0d1</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-crescent-3"></i>
+                <h5>wi-moon-alt-waxing-crescent-3</h5>
+                <p>f0d2</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-crescent-4"></i>
+                <h5>wi-moon-alt-waxing-crescent-4</h5>
+                <p>f0d3</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-crescent-5"></i>
+                <h5>wi-moon-alt-waxing-crescent-5</h5>
+                <p>f0d4</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-crescent-6"></i>
+                <h5>wi-moon-alt-waxing-crescent-6</h5>
+                <p>f0d5</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moon-alt-first-quarter"></i>
+                <h5>wi-moon-alt-first-quarter</h5>
+                <p>f0d6</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-gibbous-1"></i>
+                <h5>wi-moon-alt-waxing-gibbous-1</h5>
+                <p>f0d7</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-gibbous-2"></i>
+                <h5>wi-moon-alt-waxing-gibbous-2</h5>
+                <p>f0d8</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-gibbous-3"></i>
+                <h5>wi-moon-alt-waxing-gibbous-3</h5>
+                <p>f0d9</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-gibbous-4"></i>
+                <h5>wi-moon-alt-waxing-gibbous-4</h5>
+                <p>f0da</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-gibbous-5"></i>
+                <h5>wi-moon-alt-waxing-gibbous-5</h5>
+                <p>f0db</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waxing-gibbous-6"></i>
+                <h5>wi-moon-alt-waxing-gibbous-6</h5>
+                <p>f0dc</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moon-alt-full"></i>
+                <h5>wi-moon-alt-full</h5>
+                <p>f0dd</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-gibbous-1"></i>
+                <h5>wi-moon-alt-waning-gibbous-1</h5>
+                <p>f0de</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-gibbous-2"></i>
+                <h5>wi-moon-alt-waning-gibbous-2</h5>
+                <p>f0df</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-gibbous-3"></i>
+                <h5>wi-moon-alt-waning-gibbous-3</h5>
+                <p>f0e0</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-gibbous-4"></i>
+                <h5>wi-moon-alt-waning-gibbous-4</h5>
+                <p>f0e1</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-gibbous-5"></i>
+                <h5>wi-moon-alt-waning-gibbous-5</h5>
+                <p>f0e2</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-gibbous-6"></i>
+                <h5>wi-moon-alt-waning-gibbous-6</h5>
+                <p>f0e3</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-moon-alt-third-quarter"></i>
+                <h5>wi-moon-alt-third-quarter</h5>
+                <p>f0e4</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-crescent-1"></i>
+                <h5>wi-moon-alt-waning-crescent-1</h5>
+                <p>f0e5</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-crescent-2"></i>
+                <h5>wi-moon-alt-waning-crescent-2</h5>
+                <p>f0e6</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-crescent-3"></i>
+                <h5>wi-moon-alt-waning-crescent-3</h5>
+                <p>f0e7</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-crescent-4"></i>
+                <h5>wi-moon-alt-waning-crescent-4</h5>
+                <p>f0e8</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-crescent-5"></i>
+                <h5>wi-moon-alt-waning-crescent-5</h5>
+                <p>f0e9</p>
+            </div>
+            <div class="tile">
+                <i class="wi-moon-alt-waning-crescent-6"></i>
+                <h5>wi-moon-alt-waning-crescent-6</h5>
+                <p>f0ea</p>
+            </div>
+        </section>
+
+        <section style="display:none;">
+            <header>
+                <h1>Time</h1>
+            </header>
+            <div class="tile">
+                <i class="wi-time-1"></i>
+                <h5>wi-time-1</h5>
+                <p>f08a</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-2"></i>
+                <h5>wi-time-2</h5>
+                <p>f08b</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-3"></i>
+                <h5>wi-time-3</h5>
+                <p>f08c</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-4"></i>
+                <h5>wi-time-4</h5>
+                <p>f08d</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-5"></i>
+                <h5>wi-time-5</h5>
+                <p>f08e</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-6"></i>
+                <h5>wi-time-6</h5>
+                <p>f08f</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-7"></i>
+                <h5>wi-time-7</h5>
+                <p>f090</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-8"></i>
+                <h5>wi-time-8</h5>
+                <p>f091</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-9"></i>
+                <h5>wi-time-9</h5>
+                <p>f092</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-10"></i>
+                <h5>wi-time-10</h5>
+                <p>f093</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-11"></i>
+                <h5>wi-time-11</h5>
+                <p>f094</p>
+            </div>
+            <div class="tile">
+                <i class="wi-time-12"></i>
+                <h5>wi-time-12</h5>
+                <p>f089</p>
+            </div>
+        </section>
+
+        <section style="display:none;">
+            <header>
+                <h1>Directional Arrows</h1>
+            </header>
+            <div class="tile">
+                <i class="wi wi-direction-up"></i>
+                <h5>wi-direction-up</h5>
+                <p>f058</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-direction-up-right"></i>
+                <h5>wi-direction-up-right</h5>
+                <p>f057</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-direction-right"></i>
+                <h5>wi-direction-right</h5>
+                <p>f04d</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-direction-down-right"></i>
+                <h5>wi-direction-down-right</h5>
+                <p>f088</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-direction-down"></i>
+                <h5>wi-direction-down</h5>
+                <p>f044</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-direction-down-left"></i>
+                <h5>wi-direction-down-left</h5>
+                <p>f043</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-direction-left"></i>
+                <h5>wi-direction-left</h5>
+                <p>f048</p>
+            </div>
+            <div class="tile">
+                <i class="wi wi-direction-up-left"></i>
+                <h5>wi-direction-up-left</h5>
+                <p>f087</p>
+            </div>
+        </section>
+
+        <section style="display:none;">
+            <header>
+                <h1>Wind Degrees</h1>
+            </header>
+            <div class="tile"><i class="wi wi-wind towards-0-deg"></i>
+                <i class="towards-0-deg"></i>
+                <h5>towards-0-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-23-deg"></i>
+                <i class="towards-23-deg"></i>
+                <h5>towards-23-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-45-deg"></i>
+                <i class="towards-45-deg"></i>
+                <h5>towards-45-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-68-deg"></i>
+                <i class="towards-68-deg"></i>
+                <h5>towards-68-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-90-deg"></i>
+                <i class="towards-90-deg"></i>
+                <h5>towards-90-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-113-deg"></i>
+                <i class="towards-113-deg"></i>
+                <h5>towards-113-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-135-deg"></i>
+                <i class="towards-135-deg"></i>
+                <h5>towards-135-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-158-deg"></i>
+                <i class="towards-158-deg"></i>
+                <h5>towards-158-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-180-deg"></i>
+                <i class="towards-180-deg"></i>
+                <h5>towards-180-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-203-deg"></i>
+                <i class="towards-203-deg"></i>
+                <h5>towards-203-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-225-deg"></i>
+                <i class="towards-225-deg"></i>
+                <h5>towards-225-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-248-deg"></i>
+                <i class="towards-248-deg"></i>
+                <h5>towards-248-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-270-deg"></i>
+                <i class="towards-270-deg"></i>
+                <h5>towards-270-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-293-deg"></i>
+                <i class="towards-293-deg"></i>
+                <h5>towards-293-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-313-deg"></i>
+                <i class="towards-313-deg"></i>
+                <h5>towards-313-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind towards-336-deg"></i>
+                <i class="towards-336-deg"></i>
+                <h5>towards-336-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-180-deg"></i>
+                <i class="from-180-deg"></i>
+                <h5>from-180-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-203-deg"></i>
+                <i class="from-203-deg"></i>
+                <h5>from-203-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-225-deg"></i>
+                <i class="from-225-deg"></i>
+                <h5>from-225-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-248-deg"></i>
+                <i class="from-248-deg"></i>
+                <h5>from-248-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-270-deg"></i>
+                <i class="from-270-deg"></i>
+                <h5>from-270-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-293-deg"></i>
+                <i class="from-293-deg"></i>
+                <h5>from-293-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-313-deg"></i>
+                <i class="from-313-deg"></i>
+                <h5>from-313-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-336-deg"></i>
+                <i class="from-336-deg"></i>
+                <h5>from-336-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-0-deg"></i>
+                <i class="from-0-deg"></i>
+                <h5>from-0-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-23-deg"></i>
+                <i class="from-23-deg"></i>
+                <h5>from-23-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-45-deg"></i>
+                <i class="from-45-deg"></i>
+                <h5>from-45-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-68-deg"></i>
+                <i class="from-68-deg"></i>
+                <h5>from-68-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-90-deg"></i>
+                <i class="from-90-deg"></i>
+                <h5>from-90-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-113-deg"></i>
+                <i class="from-113-deg"></i>
+                <h5>from-113-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-135-deg"></i>
+                <i class="from-135-deg"></i>
+                <h5>from-135-deg</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind from-158-deg"></i>
+                <i class="from-158-deg"></i>
+                <h5>from-158-deg</h5>
+                <p>f0b1</p>
+            </div>
+
+        </section>
+
+        <section style="display:none;">
+            <header>
+                <h1>Wind Cardinals</h1>
+            </header>
+            <div class="tile"><i class="wi wi-wind wi-towards-n"></i>
+                <i class="wi wi-towards-n"></i>
+                <h5>wi-towards-n</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-nne"></i>
+                <i class="wi wi-towards-nne"></i>
+                <h5>wi-towards-nne</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-ne"></i>
+                <i class="wi wi-towards-ne"></i>
+                <h5>wi-towards-ne</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-ene"></i>
+                <i class="wi wi-towards-ene"></i>
+                <h5>wi-towards-ene</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-e"></i>
+                <i class="wi wi-towards-e"></i>
+                <h5>wi-towards-e</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-ese"></i>
+                <i class="wi wi-towards-ese"></i>
+                <h5>wi-towards-ese</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-se"></i>
+                <i class="wi wi-towards-se"></i>
+                <h5>wi-towards-se</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-sse"></i>
+                <i class="wi wi-towards-sse"></i>
+                <h5>wi-towards-sse</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-s"></i>
+                <i class="wi wi-towards-s"></i>
+                <h5>wi-towards-s</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-ssw"></i>
+                <i class="wi wi-towards-ssw"></i>
+                <h5>wi-towards-ssw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-sw"></i>
+                <i class="wi wi-towards-sw"></i>
+                <h5>wi-towards-sw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-wsw"></i>
+                <i class="wi wi-towards-wsw"></i>
+                <h5>wi-towards-wsw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-w"></i>
+                <i class="wi wi-towards-w"></i>
+                <h5>wi-towards-w</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-wnw"></i>
+                <i class="wi wi-towards-wnw"></i>
+                <h5>wi-towards-wnw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-nw"></i>
+                <i class="wi wi-towards-nw"></i>
+                <h5>wi-towards-nw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-towards-nnw"></i>
+                <i class="wi wi-towards-nnw"></i>
+                <h5>wi-towards-nnw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-n"></i>
+                <i class="wi wi-from-n"></i>
+                <h5>wi-from-n</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-nne"></i>
+                <i class="wi wi-from-nne"></i>
+                <h5>wi-from-nne</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-ne"></i>
+                <i class="wi wi-from-ne"></i>
+                <h5>wi-from-ne</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-ene"></i>
+                <i class="wi wi-from-ene"></i>
+                <h5>wi-from-ene</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-e"></i>
+                <i class="wi wi-from-e"></i>
+                <h5>wi-from-e</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-ese"></i>
+                <i class="wi wi-from-ese"></i>
+                <h5>wi-from-ese</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-se"></i>
+                <i class="wi wi-from-se"></i>
+                <h5>wi-from-se</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-sse"></i>
+                <i class="wi wi-from-sse"></i>
+                <h5>wi-from-sse</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-s"></i>
+                <i class="wi wi-from-s"></i>
+                <h5>wi-from-s</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-ssw"></i>
+                <i class="wi wi-from-ssw"></i>
+                <h5>wi-from-ssw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-sw"></i>
+                <i class="wi wi-from-sw"></i>
+                <h5>wi-from-sw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-wsw"></i>
+                <i class="wi wi-from-wsw"></i>
+                <h5>wi-from-wsw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-w"></i>
+                <i class="wi wi-from-w"></i>
+                <h5>wi-from-w</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-wnw"></i>
+                <i class="wi wi-from-wnw"></i>
+                <h5>wi-from-wnw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-nw"></i>
+                <i class="wi wi-from-nw"></i>
+                <h5>wi-from-nw</h5>
+                <p>f0b1</p>
+            </div>
+            <div class="tile"><i class="wi wi-wind wi-from-nnw"></i>
+                <i class="wi wi-from-nnw"></i>
+                <h5>wi-from-nnw</h5>
+                <p>f0b1</p>
+            </div>
+        </section>
+
+        <section style="display:none;">
+            <header>
+                <h1>Beaufort Wind Scale</h1>
+            </header>
+            <div class="tile">
+                <i class="wi-wind-beaufort-0"></i>
+                <h5>wi-wind-beaufort-0</h5>
+                <p>f0b7</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-1"></i>
+                <h5>wi-wind-beaufort-1</h5>
+                <p>f0b8</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-2"></i>
+                <h5>wi-wind-beaufort-2</h5>
+                <p>f0b9</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-3"></i>
+                <h5>wi-wind-beaufort-3</h5>
+                <p>f0ba</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-4"></i>
+                <h5>wi-wind-beaufort-4</h5>
+                <p>f0bb</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-5"></i>
+                <h5>wi-wind-beaufort-5</h5>
+                <p>f0bc</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-6"></i>
+                <h5>wi-wind-beaufort-6</h5>
+                <p>f0bd</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-7"></i>
+                <h5>wi-wind-beaufort-7</h5>
+                <p>f0be</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-8"></i>
+                <h5>wi-wind-beaufort-8</h5>
+                <p>f0bf</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-9"></i>
+                <h5>wi-wind-beaufort-9</h5>
+                <p>f0c0</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-10"></i>
+                <h5>wi-wind-beaufort-10</h5>
+                <p>f0c1</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-11"></i>
+                <h5>wi-wind-beaufort-11</h5>
+                <p>f0c2</p>
+            </div>
+            <div class="tile">
+                <i class="wi-wind-beaufort-12"></i>
+                <h5>wi-wind-beaufort-12</h5>
+                <p>f0c3</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
