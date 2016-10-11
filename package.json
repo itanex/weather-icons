@@ -1,11 +1,16 @@
 {
   "name": "weather-icons",
-	"version": "2.1.0",
+  "version": "2.1.0",
   "description": "222 weather themed icons inspired by Font Awesome and ready for Bootstrap",
   "scripts": {
-    "compile-sass": "npm run base-sass | npm run wind-sass",
-    "base-sass": "node-sass 'sass/weather-icons.scss' -o 'css/' | cleancss -r / --skip-rebase -o css/weather-icons.min.css css/weather-icons.css",
-    "wind-sass": "node-sass 'sass/weather-icons-wind.scss' -o 'css/' | cleancss -r / --skip-rebase -o css/weather-icons-wind.min.css css/weather-icons-wind.css"
+    "start": "concurrently 'npm run tsc:w' 'npm run lite' 'npm run sass:w'",
+    "lite": "lite-server",
+    "sass": "node-sass -r 'sass/' -o 'css/'",
+    "sass:w": "node-sass -w -r 'sass/' -o 'css/'",
+    "build": "npm run sass & npm run weather & npm run wind & npm run stacked",
+    "weather": "cleancss --s1 -r / --skip-rebase -o css/weather-icons.min.css css/weather-icons.css",
+    "wind": "cleancss --s1 -r / --skip-rebase -o css/weather-icons-wind.min.css css/weather-icons-wind.css",
+    "stacked": "cleancss --s1 -r / --skip-rebase -o css/weather-icons-stacked.min.css css/weather-icons-stacked.css"
   },
   "authors": [
     "Erik Flowers <erik@helloerik.com>",
@@ -13,15 +18,17 @@
   ],
   "license": "MIT",
   "homepage": "http://erikflowers.github.io/weather-icons/",
-	"keywords": [
-    "weather", 
+  "keywords": [
+    "weather",
     "icon-font",
-		"css", 
-    "icon", 
+    "css",
+    "icon",
     "icons"
-	],
+  ],
   "devDependencies": {
     "clean-css": "^3.4.20",
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.0",
     "node-sass": "^3.8.0"
   }
 }
