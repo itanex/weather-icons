@@ -36,6 +36,11 @@ $sun-behind-nudge: (
   color: $sun-color,
 );
 
+$sun-overcast: (
+  content: '\F135',
+  color: $sun-color,
+);
+
 /*!
  *  Night Glyph Maps
  */
@@ -46,6 +51,11 @@ $moon-behind: (
 
 $moon-behind-nudge: (
   content: '\F107',
+  color: $moon-color,
+);
+
+$moon-overcast: (
+  content: '\F136',
   color: $moon-color,
 );
 
@@ -60,6 +70,11 @@ $moon-alt-behind: (
 
 $moon-alt-behind-nudge: (
   content: '\F109',
+  color: $moon-color,
+);
+
+$moon-alt-overcast: (
+  content: '\F137',
   color: $moon-color,
 );
 

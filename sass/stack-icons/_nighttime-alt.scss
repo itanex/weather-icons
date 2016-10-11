@@ -43,20 +43,6 @@
 
 @include stack-icon-class(build-selector($prefix, 'night-alt-overcast'), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'night-alt-partly-cloudy'), $unknown);
-
-// @include stack-icon-class(build-selector($prefix, 'night-alt-partly-cloudy'), $moon-alt-behind, $cloud-center, $snow);
-
-.#{$prefix}-night-alt-partly-cloudy {
-  &::before {
-    content: '\F135';
-    color: $moon-color;
-  }
-  
-  &::after {
-    content: '\F134';
-    color: $cloud-color;
-  }
-}
+@include stack-icon-class(build-selector($prefix, 'night-alt-partly-cloudy'), $moon-alt-overcast, $cloud-overcast);
 
 @include stack-icon-class(build-selector($prefix, 'night-alt-cloudy-high'), $unknown);

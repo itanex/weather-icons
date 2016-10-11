@@ -1,6 +1,6 @@
 // Wind Variables 2.0
 
-$wind: "\f0b1";
+$wind: '\f0b1';
 
 .#{$wi-css-prefix}-wind:before { content: $wind; }
 
@@ -12,4 +12,4 @@ $wind: "\f0b1";
   transform: rotate($val);
 }
 
-@import "classes-wind-degrees.scss";
+@import '_wind-degrees.scss';

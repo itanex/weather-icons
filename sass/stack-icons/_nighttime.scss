@@ -46,3 +46,5 @@
 @include stack-icon-class(build-selector($prefix, 'lunar-eclipse'), $unknown);
 
 @include stack-icon-class(build-selector($prefix, 'night-cloudy-high'), $unknown);
+
+@include stack-icon-class(build-selector($prefix, 'night-partly-cloudy'), $moon-overcast, $cloud-overcast);

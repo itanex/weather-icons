@@ -41,7 +41,7 @@
 
 @include stack-icon-class(build-selector($prefix, 'day-thunderstorm'), $sun-behind, $cloud-center, $rain-nudge, $lightning-nudge);
 
-@include stack-icon-class(build-selector($prefix, 'day-sunny-overcast'), $unknown);
+@include stack-icon-class(build-selector($prefix, 'day-sunny-overcast'), $sun-overcast, $cloud-overcast);
 
 @include stack-icon-class(build-selector($prefix, 'day-haze'), $unknown);
 

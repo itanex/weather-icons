@@ -20,8 +20,11 @@
  *    "Font Awesome by Dave Gandy - http://fontawesome.io"
  */
  
-@import 'weather-icons-core';
-@import 'icon-variables/variables-wind-names';
-@import 'icon-classes/classes-wind';
-@import 'icon-classes/classes-wind-degrees';
-@import 'icon-classes/classes-wind-aliases';
+// @import 'weather-icons-core';
+@import 'core';
+
+@import 'icon-variables/_wind-names';
+
+@import 'icon-classes/_wind';
+@import 'icon-classes/_wind-degrees';
+@import 'icon-classes/_wind-aliases';

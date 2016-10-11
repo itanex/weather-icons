@@ -20,13 +20,31 @@
  *    "Font Awesome by Dave Gandy - http://fontawesome.io"
  */
 
-@import 'weather-icons-core';
-@import 'weather-icons-variables';
-@import 'weather-icons-classes';
+//@import 'weather-icons-core';
+@import 'core';
+
+@import 'icon-variables/beaufort';
+@import 'icon-variables/time';
+@import 'icon-variables/moon';
+@import 'icon-variables/direction';
+@import 'icon-variables/day';
+@import 'icon-variables/night';
+@import 'icon-variables/neutral';
+@import 'icon-variables/misc';
+
+@import 'icon-classes/day';
+@import 'icon-classes/night';
+@import 'icon-classes/neutral';
+@import 'icon-classes/misc';
+@import 'icon-classes/moon';
+@import 'icon-classes/moon-aliases';
+@import 'icon-classes/time';
+@import 'icon-classes/direction';
+@import 'icon-classes/beaufort';
+
 // Mappings to various APIs
-@import 'mappings/wi-yahoo';
-@import 'mappings/wi-forecast-io';
-@import 'mappings/wi-wmo4680';
-@import 'mappings/wi-owm';
-@import 'mappings/wi-wunderground';
-@import 'weather-icons-stacked';
+@import 'mappings/yahoo';
+@import 'mappings/forecast-io';
+@import 'mappings/wmo4680';
+@import 'mappings/owm';
+@import 'mappings/wunderground';
