@@ -3,46 +3,46 @@
  *  Neutral Icons
  */
 
-@include stack-icon-class(build-class-selectors($prefix, 'cloud'), $cloud);
+@include stack-icon-class(build-class-selectors($prefix, $cloud), $cloud-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'cloudy'), $cloud);
+@include stack-icon-class(build-class-selectors($prefix, $cloudy), $cloud-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'storm-showers'), $cloud-center, $lightning-nudge, $rain-showers-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $storm-showers), $cloud-center-map, $lightning-nudge-map, $rain-showers-nudge-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'thunderstorm'), $cloud-center, $lightning-nudge, $rain-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $thunderstorm), $cloud-center-map, $lightning-nudge-map, $rain-nudge-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'cloudy-gusts'), $cloud-left, $gust);
+@include stack-icon-class(build-class-selectors($prefix, $cloudy-gusts), $cloud-left-map, $gust-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'cloudy-windy'), $cloud-left, $wind);
+@include stack-icon-class(build-class-selectors($prefix, $cloudy-windy), $cloud-left-map, $wind-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'fog'), $cloud-top, $fog);
+@include stack-icon-class(build-class-selectors($prefix, $fog), $cloud-top-map, $fog-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'hail'), $cloud-center, $hail);
+@include stack-icon-class(build-class-selectors($prefix, $hail), $cloud-center-map, $hail-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'rain'), $cloud-center, $rain);
+@include stack-icon-class(build-class-selectors($prefix, $rain), $cloud-center-map, $rain-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'rain-mix'), $cloud-center, $rain-mix);
+@include stack-icon-class(build-class-selectors($prefix, $rain-mix), $cloud-center-map, $rain-mix-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'rain-wind'), $cloud-center, $rain-wind);
+@include stack-icon-class(build-class-selectors($prefix, $rain-wind), $cloud-center-map, $rain-wind-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'showers'), $cloud-center, $rain-showers);
+@include stack-icon-class(build-class-selectors($prefix, $showers), $cloud-center-map, $rain-showers-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'sleet'), $cloud-center, $sleet);
+@include stack-icon-class(build-class-selectors($prefix, $sleet), $cloud-center-map, $sleet-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'snow'), $cloud-center, $snow);
+@include stack-icon-class(build-class-selectors($prefix, $snow), $cloud-center-map, $snow-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'sprinkle'), $cloud-center, $rain-sprinkles);
+@include stack-icon-class(build-class-selectors($prefix, $sprinkle), $cloud-center-map, $rain-sprinkles-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'snow-wind'), $cloud-center, $snow-wind);
+@include stack-icon-class(build-class-selectors($prefix, $snow-wind), $cloud-center-map, $snow-wind-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'snowflake-cold'), $snowflake);
+@include stack-icon-class(build-class-selectors($prefix, $snowflake-cold), $snowflake-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'lightning'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $lightning), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'raindrop'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $raindrop), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'raindrops'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $raindrops), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'windy'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $windy), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'strong-wind'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $strong-wind), $unknown-map);

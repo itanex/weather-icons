@@ -3,7 +3,7 @@
  *  Unkown Glyph Map
  *  Used to standarize against methods until glyph is available
  */
-$unknown: (
+$unknown-map: (
   content: '\F---',
   color: #000000,
 );
@@ -11,7 +11,7 @@ $unknown: (
 /*!
  *  Day Glyph Maps
  */
-$sunny: (
+$sunny-map: (
   content: '\F00d',
   color: $sun-color,
   additional: (
@@ -26,17 +26,17 @@ $sunny: (
   ),
 );
 
-$sun-behind: (
+$sun-behind-map: (
   content: '\F104',
   color: $sun-color,
 );
 
-$sun-behind-nudge: (
+$sun-behind-nudge-map: (
   content: '\F105',
   color: $sun-color,
 );
 
-$sun-overcast: (
+$sun-overcast-map: (
   content: '\F135',
   color: $sun-color,
 );
@@ -44,17 +44,17 @@ $sun-overcast: (
 /*!
  *  Night Glyph Maps
  */
-$moon-behind: (
+$moon-behind-map: (
   content: '\F106',
   color: $moon-color,
 );
 
-$moon-behind-nudge: (
+$moon-behind-nudge-map: (
   content: '\F107',
   color: $moon-color,
 );
 
-$moon-overcast: (
+$moon-overcast-map: (
   content: '\F136',
   color: $moon-color,
 );
@@ -63,17 +63,17 @@ $moon-overcast: (
 /*!
  *  Night (alt) Glyph Maps
  */
-$moon-alt-behind: (
+$moon-alt-behind-map: (
   content: '\F108',
   color: $moon-color,
 );
 
-$moon-alt-behind-nudge: (
+$moon-alt-behind-nudge-map: (
   content: '\F109',
   color: $moon-color,
 );
 
-$moon-alt-overcast: (
+$moon-alt-overcast-map: (
   content: '\F137',
   color: $moon-color,
 );
@@ -81,32 +81,32 @@ $moon-alt-overcast: (
 /*!
  *  Cloud Glyph Maps
  */
-$cloud: (
+$cloud-map: (
   content: '\F041',
   color: $cloud-color,
 );
 
-$cloud-whole: (
+$cloud-whole-map: (
   content: '\F100',
   color: $cloud-color,
 );
 
-$cloud-center: (
+$cloud-center-map: (
   content: '\F101',
   color: $cloud-color,
 );
 
-$cloud-left: (
+$cloud-left-map: (
   content: '\F102',
   color: $cloud-color,
 );
 
-$cloud-top: (
+$cloud-top-map: (
   content: '\F103',
   color: $cloud-color,
 );
 
-$cloud-overcast: (
+$cloud-overcast-map: (
   content: '\F134',
   color: $cloud-color,
 );
@@ -114,12 +114,12 @@ $cloud-overcast: (
 /*!
  *  Wind Glyph Maps
  */
-$gust: (
+$gust-map: (
   content: '\F121',
   color: $wind-color,
 );
 
-$wind: (
+$wind-map: (
   content: '\F120',
   color: $wind-color,
   animation: (
@@ -132,7 +132,7 @@ $wind: (
 /*!
  *  Fog Glyph Maps
  */
-$fog: (
+$fog-map: (
   content: '\F122',
   color: $fog-color,
   animation: (
@@ -145,7 +145,7 @@ $fog: (
 /*!
  *  Hail Glyph Maps
  */
-$hail: (
+$hail-map: (
   content: '\F110',
   color: $hail-color,
 );
@@ -153,7 +153,7 @@ $hail: (
 /*!
  *  Lightning Glyph Maps
  */
-$lightning: (
+$lightning-map: (
   content: '\F133',
   color: $lightning-color,
   animation: (
@@ -164,7 +164,7 @@ $lightning: (
   )
 );
 
-$lightning-nudge: (
+$lightning-nudge-map: (
   content: '\F125',
   color: $lightning-color,
   animation: (
@@ -178,37 +178,37 @@ $lightning-nudge: (
 /*!
  *  Rain Glyph Maps
  */
-$rain: (
+$rain-map: (
   content: '\F118',
   color: $rain-color,
 );
 
-$rain-mix: (
+$rain-mix-map: (
   content: '\F114',
   color: $rain-color,
 );
 
-$rain-wind: (
+$rain-wind-map: (
   content: '\F111',
   color: $rain-color,
 );
 
-$rain-showers: (
+$rain-showers-map: (
   content: '\F112',
   color: $rain-color,
 );
 
-$rain-sprinkles: (
+$rain-sprinkles-map: (
   content: '\F123',
   color: $rain-color,
 );
 
-$rain-nudge: (
+$rain-nudge-map: (
   content: '\F128',
   color: $rain-color,
 );
 
-$rain-showers-nudge: (
+$rain-showers-nudge-map: (
   content: '\F129',
   color: $rain-color,
 );
@@ -216,7 +216,7 @@ $rain-showers-nudge: (
 /*!
  *  Sleet Glyph Maps
  */
-$sleet: (
+$sleet-map: (
   content: '\F124',
   color: $hail-color,
 );
@@ -224,7 +224,7 @@ $sleet: (
 /*!
  *  Snow Glyph Maps
  */
-$snow: (
+$snow-map: (
   content: '\F116',
   color: $snow-color,
   animation: (
@@ -235,12 +235,12 @@ $snow: (
   )
 );
 
-$snow-wind: (
+$snow-wind-map: (
   content: '\F117',
   color: $snow-color,
 );
 
-$snowflake: (
+$snowflake-map: (
   content: '\F076',
   color: $snow-color,
   additional: (

@@ -5,9 +5,12 @@
  * to support their own needs
  *
  */
+
+$night-alt-clear: if(variable_exists('night-alt-clear'), append($night-alt-clear, 'night-alt-clear'), 'night-alt-clear');
 $night-alt-cloudy: if(variable_exists('night-alt-cloudy'), append($night-alt-cloudy, 'night-alt-cloudy'), 'night-alt-cloudy');
 $night-alt-cloudy-gusts: if(variable_exists('night-alt-cloudy-gusts'), append($night-alt-cloudy-gusts, 'night-alt-cloudy-gusts'), 'night-alt-cloudy-gusts');
 $night-alt-cloudy-windy: if(variable_exists('night-alt-cloudy-windy'), append($night-alt-cloudy-windy, 'night-alt-cloudy-windy'), 'night-alt-cloudy-windy');
+$night-alt-fog: if(variable_exists('night-alt-fog'), append($night-alt-fog, 'night-alt-fog'), 'night-alt-fog');
 $night-alt-hail: if(variable_exists('night-alt-hail'), append($night-alt-hail, 'night-alt-hail'), 'night-alt-hail');
 $night-alt-lightning: if(variable_exists('night-alt-lightning'), append($night-alt-lightning, 'night-alt-lightning'), 'night-alt-lightning');
 $night-alt-rain: if(variable_exists('night-alt-rain'), append($night-alt-rain, 'night-alt-rain'), 'night-alt-rain');
@@ -24,3 +27,4 @@ $night-alt-storm-showers: if(variable_exists('night-alt-storm-showers'), append(
 $night-alt-thunderstorm: if(variable_exists('night-alt-thunderstorm'), append($night-alt-thunderstorm, 'night-alt-thunderstorm'), 'night-alt-thunderstorm');
 $night-alt-partly-cloudy: if(variable_exists('night-alt-partly-cloudy'), append($night-alt-partly-cloudy, 'night-alt-partly-cloudy'), 'night-alt-partly-cloudy');
 $night-alt-cloudy-high: if(variable_exists('night-alt-cloudy-high'), append($night-alt-cloudy-high, 'night-alt-cloudy-high'), 'night-alt-cloudy-high');
+$night-alt-overcast: if(variable_exists('night-alt-overcast'), append($night-alt-overcast, 'night-alt-overcast'), 'night-alt-overcast');

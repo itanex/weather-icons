@@ -3,20 +3,20 @@
  *  Natural Disaster Icons
  */
 
-@include stack-icon-class(build-class-selectors($prefix, 'sandstorm'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'sandstorm'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'earthquake'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'earthquake'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'fire'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'fire'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'flood'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'flood'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'meteor'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'meteor'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'tsunami'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'tsunami'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'volcano'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'volcano'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'hurricane'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'hurricane'), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'tornado'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'tornado'), $unknown-map);

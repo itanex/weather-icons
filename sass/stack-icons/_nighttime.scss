@@ -3,48 +3,48 @@
  *  Night Time Icons
  */
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-clear'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $night-clear), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'stars'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $stars), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-cloudy'), $moon-behind, $cloud-whole);
+@include stack-icon-class(build-class-selectors($prefix, $night-cloudy), $moon-behind-map, $cloud-whole-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-cloudy-gusts'), $moon-behind-nudge, $cloud-left, $gust);
+@include stack-icon-class(build-class-selectors($prefix, $night-cloudy-gusts), $moon-behind-nudge-map, $cloud-left-map, $gust-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-cloudy-windy'), $moon-behind-nudge, $cloud-left, $wind);
+@include stack-icon-class(build-class-selectors($prefix, $night-cloudy-windy), $moon-behind-nudge-map, $cloud-left-map, $wind-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-fog'), $moon-behind-nudge, $cloud-left, $fog);
+@include stack-icon-class(build-class-selectors($prefix, $night-fog), $moon-behind-nudge-map, $cloud-left-map, $fog-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-hail'), $moon-behind, $cloud-center, $hail);
+@include stack-icon-class(build-class-selectors($prefix, $night-hail), $moon-behind-map, $cloud-center-map, $hail-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-lightning'), $moon-behind, $cloud-center, $lightning);
+@include stack-icon-class(build-class-selectors($prefix, $night-lightning), $moon-behind-map, $cloud-center-map, $lightning-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-rain'), $moon-behind, $cloud-center, $rain);
+@include stack-icon-class(build-class-selectors($prefix, $night-rain), $moon-behind-map, $cloud-center-map, $rain-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-rain-mix'), $moon-behind, $cloud-center, $rain-mix);
+@include stack-icon-class(build-class-selectors($prefix, $night-rain-mix), $moon-behind-map, $cloud-center-map, $rain-mix-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-rain-wind'), $moon-behind, $cloud-center, $rain-wind);
+@include stack-icon-class(build-class-selectors($prefix, $night-rain-wind), $moon-behind-map, $cloud-center-map, $rain-wind-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-showers'), $moon-behind, $cloud-center, $rain-showers);
+@include stack-icon-class(build-class-selectors($prefix, $night-showers), $moon-behind-map, $cloud-center-map, $rain-showers-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-sleet'), $moon-behind, $cloud-center, $sleet);
+@include stack-icon-class(build-class-selectors($prefix, $night-sleet), $moon-behind-map, $cloud-center-map, $sleet-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-sleet-storm'), $moon-behind, $cloud-center, $sleet);
+@include stack-icon-class(build-class-selectors($prefix, $night-sleet-storm), $moon-behind-map, $cloud-center-map, $sleet-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-snow'), $moon-behind, $cloud-center, $snow);
+@include stack-icon-class(build-class-selectors($prefix, $night-snow), $moon-behind-map, $cloud-center-map, $snow-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-snow-thunderstorm'), $moon-behind, $cloud-center, $snow, $lightning-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $night-snow-thunderstorm), $moon-behind-map, $cloud-center-map, $snow-map, $lightning-nudge-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-snow-wind'), $moon-behind, $cloud-center, $snow-wind);
+@include stack-icon-class(build-class-selectors($prefix, $night-snow-wind), $moon-behind-map, $cloud-center-map, $snow-wind-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-sprinkle'), $moon-behind, $cloud-center, $rain-sprinkles);
+@include stack-icon-class(build-class-selectors($prefix, $night-sprinkle), $moon-behind-map, $cloud-center-map, $rain-sprinkles-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-storm-showers'), $moon-behind, $cloud-center, $rain-showers-nudge, $lightning-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $night-storm-showers), $moon-behind-map, $cloud-center-map, $rain-showers-nudge-map, $lightning-nudge-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-thunderstorm'), $moon-behind, $cloud-center, $rain-nudge, $lightning-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $night-thunderstorm), $moon-behind-map, $cloud-center-map, $rain-nudge-map, $lightning-nudge-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'lunar-eclipse'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $lunar-eclipse), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-cloudy-high'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $night-cloudy-high), $unknown-map);
 
-@include stack-icon-class(build-class-selectors($prefix, 'night-partly-cloudy'), $moon-overcast, $cloud-overcast);
+@include stack-icon-class(build-class-selectors($prefix, $night-partly-cloudy), $moon-overcast-map, $cloud-overcast-map);
