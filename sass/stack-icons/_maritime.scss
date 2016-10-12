@@ -3,10 +3,10 @@
  *  Maritime Icons
  */
 
-@include stack-icon-class(build-selector($prefix, 'small-craft-advisory'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'small-craft-advisory'), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'gale-warning'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'gale-warning'), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'storm-warning'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'storm-warning'), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'hurricane-warning'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, 'hurricane-warning'), $unknown);

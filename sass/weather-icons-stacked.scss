@@ -6,7 +6,7 @@
  */
 
 @mixin stack-icon-class ($selector, $glyph1, $glyph2: null, $glyph3: null, $glyph4: null) {
-  .#{$selector} {
+  #{$selector} {
     &::before {
       @include glyph-style($glyph1);
     }
@@ -55,28 +55,32 @@
   }
 }
 
-@function build-selector($prefix, $phrase, $append: '') {
-  @if $append == '' {
-    @return $prefix + '-' + $phrase;
-  } @else {
-    @return $prefix + '-' + $phrase + '-' + $append;
+@function build-class-selectors($prefix, $alias) {
+  $selector: null;
+  
+  @each $item in $alias {
+    $selector: append($selector, unquote('.#{$prefix}-#{$item}'), 'comma');
   }
+  
+  @return $selector;
 }
 
-$prefix: 'wi-stk';
+$prefix: 'wi-stk' !default;
 
-$sun-color: #ff7a00;
-$moon-color: #bbb;
+$sun-color: #ff7a00 !default;
+$moon-color: #bbb !default;
 
-$cloud-color: #626262;
+$cloud-color: #626262 !default;
 
-$wind-color: #3eaf3e;
-$fog-color: #48ceb1;
-$rain-color: #0281b5;
-$hail-color: #a5d2e4;
-$snow-color: #a5d2e4;
-$lightning-color: #efeb20;
+$wind-color: #3eaf3e !default;
+$fog-color: #48ceb1 !default;
+$rain-color: #0281b5 !default;
+$hail-color: #a5d2e4 !default;
+$snow-color: #a5d2e4 !default;
+$lightning-color: #efeb20 !default;
 
+
+@import 'icon-aliases';
 @import 'stack-icons/stacked-icon';
 @import 'stack-icons/glyph-maps';
 @import 'stack-icons/daytime';

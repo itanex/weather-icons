@@ -70,6 +70,40 @@
   -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
+/*!
+ * Day Time class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
+ * Night Time class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
+ * Night Time Alt class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
+ * Neutral class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
+ * Day Time Icon Classes
+ *
+ * Standard Single Glyph Icon
+ *
+ */
 .wi-day-sunny:before {
   content: ""; }
 
@@ -148,6 +182,12 @@
 .wi-day-light-wind:before {
   content: ""; }
 
+/*!
+ * Night Time Icon Classes
+ *
+ * Standard Single Glyph Icon
+ *
+ */
 .wi-night-clear:before {
   content: ""; }
 
@@ -265,12 +305,6 @@
 .wi-stars:before {
   content: ""; }
 
-.wi-storm-showers:before {
-  content: ""; }
-
-.wi-thunderstorm:before {
-  content: ""; }
-
 .wi-night-alt-cloudy-high:before {
   content: ""; }
 
@@ -280,6 +314,12 @@
 .wi-night-alt-partly-cloudy:before {
   content: ""; }
 
+/*!
+ * Neutral Icon Classes
+ *
+ * Standard Single Glyph Icon
+ *
+ */
 .wi-cloud:before {
   content: ""; }
 

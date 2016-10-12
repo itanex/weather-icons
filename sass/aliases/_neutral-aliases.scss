@@ -1,0 +1,47 @@
+/*!
+ * Neutral class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+ 
+$cloud: if(variable_exists('cloud'), append($cloud, 'cloud'), 'cloud');
+$cloudy: if(variable_exists('cloudy'), append($cloudy, 'cloudy'), 'cloudy');
+$cloudy-gusts: if(variable_exists('cloudy-gusts'), append($cloudy-gusts, 'cloudy-gusts'), 'cloudy-gusts');
+$cloudy-windy: if(variable_exists('cloudy-windy'), append($cloudy-windy, 'cloudy-windy'), 'cloudy-windy');
+$fog: if(variable_exists('fog'), append($fog, 'fog'), 'fog');
+$hail: if(variable_exists('hail'), append($hail, 'hail'), 'hail');
+$rain: if(variable_exists('rain'), append($rain, 'rain'), 'rain');
+$rain-mix: if(variable_exists('rain-mix'), append($rain-mix, 'rain-mix'), 'rain-mix');
+$rain-wind: if(variable_exists('rain-wind'), append($rain-wind, 'rain-wind'), 'rain-wind');
+$showers: if(variable_exists('showers'), append($showers, 'showers'), 'showers');
+$sleet: if(variable_exists('sleet'), append($sleet, 'sleet'), 'sleet');
+$snow: if(variable_exists('snow'), append($snow, 'snow'), 'snow');
+$sprinkle: if(variable_exists('sprinkle'), append($sprinkle, 'sprinkle'), 'sprinkle');
+$storm-showers: if(variable_exists('storm-showers'), append($storm-showers, 'storm-showers'), 'storm-showers');
+$thunderstorm: if(variable_exists('thunderstorm'), append($thunderstorm, 'thunderstorm'), 'thunderstorm');
+$snow-wind: if(variable_exists('snow-wind'), append($snow-wind, 'snow-wind'), 'snow-wind');
+$smog: if(variable_exists('smog'), append($smog, 'smog'), 'smog');
+$smoke: if(variable_exists('smoke'), append($smoke, 'smoke'), 'smoke');
+$lightning: if(variable_exists('lightning'), append($lightning, 'lightning'), 'lightning');
+$raindrops: if(variable_exists('raindrops'), append($raindrops, 'raindrops'), 'raindrops');
+$raindrop: if(variable_exists('raindrop'), append($raindrop, 'raindrop'), 'raindrop');
+$dust: if(variable_exists('dust'), append($dust, 'dust'), 'dust');
+$snowflake-cold: if(variable_exists('snowflake-cold'), append($snowflake-cold, 'snowflake-cold'), 'snowflake-cold');
+$windy: if(variable_exists('windy'), append($windy, 'windy'), 'windy');
+$strong-wind: if(variable_exists('strong-wind'), append($strong-wind, 'strong-wind'), 'strong-wind');
+$sandstorm: if(variable_exists('sandstorm'), append($sandstorm, 'sandstorm'), 'sandstorm');
+$earthquake: if(variable_exists('earthquake'), append($earthquake, 'earthquake'), 'earthquake');
+$fire: if(variable_exists('fire'), append($fire, 'fire'), 'fire');
+$flood: if(variable_exists('flood'), append($flood, 'flood'), 'flood');
+$meteor: if(variable_exists('meteor'), append($meteor, 'meteor'), 'meteor');
+$tsunami: if(variable_exists('tsunami'), append($tsunami, 'tsunami'), 'tsunami');
+$volcano: if(variable_exists('volcano'), append($volcano, 'volcano'), 'volcano');
+$hurricane: if(variable_exists('hurricane'), append($hurricane, 'hurricane'), 'hurricane');
+$tornado: if(variable_exists('tornado'), append($tornado, 'tornado'), 'tornado');
+$small-craft-advisory: if(variable_exists('small-craft-advisory'), append($small-craft-advisory, 'small-craft-advisory'), 'small-craft-advisory');
+$gale-warning: if(variable_exists('gale-warning'), append($gale-warning, 'gale-warning'), 'gale-warning');
+$storm-warning: if(variable_exists('storm-warning'), append($storm-warning, 'storm-warning'), 'storm-warning');
+$hurricane-warning: if(variable_exists('hurricane-warning'), append($hurricane-warning, 'hurricane-warning'), 'hurricane-warning');
+$wind-direction: if(variable_exists('wind-direction'), append($wind-direction, 'wind-direction'), 'wind-direction');

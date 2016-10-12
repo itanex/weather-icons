@@ -1,0 +1,35 @@
+/*!
+ * Day Time class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+ 
+$day-sunny: if(variable_exists('day-sunny'), append($day-sunny, 'day-sunny'), 'day-sunny');
+$day-cloudy: if(variable_exists('day-cloudy'), append($day-cloudy, 'day-cloudy'), 'day-cloudy');
+$day-cloudy-gusts: if(variable_exists('day-cloudy-gusts'), append($day-cloudy-gusts, 'day-cloudy-gusts'), 'day-cloudy-gusts');
+$day-cloudy-windy: if(variable_exists('day-cloudy-windy'), append($day-cloudy-windy, 'day-cloudy-windy'), 'day-cloudy-windy');
+$day-fog: if(variable_exists('day-fog'), append($day-fog, 'day-fog'), 'day-fog');
+$day-hail: if(variable_exists('day-hail'), append($day-hail, 'day-hail'), 'day-hail');
+$day-lightning: if(variable_exists('day-lightning'), append($day-lightning, 'day-lightning'), 'day-lightning');
+$day-rain: if(variable_exists('day-rain'), append($day-rain, 'day-rain'), 'day-rain');
+$day-rain-mix: if(variable_exists('day-rain-mix'), append($day-rain-mix, 'day-rain-mix'), 'day-rain-mix');
+$day-rain-wind: if(variable_exists('day-rain-wind'), append($day-rain-wind, 'day-rain-wind'), 'day-rain-wind');
+$day-showers: if(variable_exists('day-showers'), append($day-showers, 'day-showers'), 'day-showers');
+$day-sleet: if(variable_exists('day-sleet'), append($day-sleet, 'day-sleet'), 'day-sleet');
+$day-sleet-storm: if(variable_exists('day-sleet-storm'), append($day-sleet-storm, 'day-sleet-storm'), 'day-sleet-storm');
+$day-snow: if(variable_exists('day-snow'), append($day-snow, 'day-snow'), 'day-snow');
+$day-snow-thunderstorm: if(variable_exists('day-snow-thunderstorm'), append($day-snow-thunderstorm, 'day-snow-thunderstorm'), 'day-snow-thunderstorm');
+$day-snow-wind: if(variable_exists('day-snow-wind'), append($day-snow-wind, 'day-snow-wind'), 'day-snow-wind');
+$day-sprinkle: if(variable_exists('day-sprinkle'), append($day-sprinkle, 'day-sprinkle'), 'day-sprinkle');
+$day-storm-showers: if(variable_exists('day-storm-showers'), append($day-storm-showers, 'day-storm-showers'), 'day-storm-showers');
+$day-thunderstorm: if(variable_exists('day-thunderstorm'), append($day-thunderstorm, 'day-thunderstorm'), 'day-thunderstorm');
+$day-sunny-overcast: if(variable_exists('day-sunny-overcast'), append($day-sunny-overcast, 'day-sunny-overcast'), 'day-sunny-overcast');
+$day-haze: if(variable_exists('day-haze'), append($day-haze, 'day-haze'), 'day-haze');
+$day-hot: if(variable_exists('day-hot'), append($day-hot, 'day-hot'), 'day-hot');
+$day-light-wind: if(variable_exists('day-light-wind'), append($day-light-wind, 'day-light-wind'), 'day-light-wind');
+$day-windy: if(variable_exists('day-windy'), append($day-windy, 'day-windy'), 'day-windy');
+$solar-eclipse: if(variable_exists('solar-eclipse'), append($solar-eclipse, 'solar-eclipse'), 'solar-eclipse');
+$day-cloudy-high: if(variable_exists('day-cloudy-high'), append($day-cloudy-high, 'day-cloudy-high'), 'day-cloudy-high');
+$hot: if(variable_exists('hot'), append($hot, 'hot'), 'hot');

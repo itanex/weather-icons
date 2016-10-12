@@ -20,16 +20,16 @@
  *    "Font Awesome by Dave Gandy - http://fontawesome.io"
  */
 
-//@import 'weather-icons-core';
 @import 'core';
+@import 'icon-aliases';
 
+@import 'icon-variables/day';
+@import 'icon-variables/night';
+@import 'icon-variables/neutral';
 @import 'icon-variables/beaufort';
 @import 'icon-variables/time';
 @import 'icon-variables/moon';
 @import 'icon-variables/direction';
-@import 'icon-variables/day';
-@import 'icon-variables/night';
-@import 'icon-variables/neutral';
 @import 'icon-variables/misc';
 
 @import 'icon-classes/day';

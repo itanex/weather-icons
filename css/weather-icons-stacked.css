@@ -6,6 +6,34 @@
  *  Author - Bryan Wood - http://github.com/itanex
  */
 /*!
+ * Day Time class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
+ * Night Time class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
+ * Night Time Alt class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
+ * Neutral class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+/*!
  *  Stackicons
  *  Reference: https://github.com/parkerbennett/stackicons
  *  Original Author: Parker Bennett

@@ -1,0 +1,31 @@
+/*!
+ * Night Time class name aliases
+ *
+ * Provided so that consumers of the SASS can import their own aliases 
+ * to support their own needs
+ *
+ */
+
+$night-clear: if(variable_exists('night-clear'), append($night-clear, 'night-clear'), 'night-clear');
+$night-cloudy: if(variable_exists('night-cloudy'), append($night-cloudy, 'night-cloudy'), 'night-cloudy');
+$night-cloudy-gusts: if(variable_exists('night-cloudy-gusts'), append($night-cloudy-gusts, 'night-cloudy-gusts'), 'night-cloudy-gusts');
+$night-cloudy-windy: if(variable_exists('night-cloudy-windy'), append($night-cloudy-windy, 'night-cloudy-windy'), 'night-cloudy-windy');
+$night-fog: if(variable_exists('night-fog'), append($night-fog, 'night-fog'), 'night-fog');
+$night-hail: if(variable_exists('night-hail'), append($night-hail, 'night-hail'), 'night-hail');
+$night-lightning: if(variable_exists('night-lightning'), append($night-lightning, 'night-lightning'), 'night-lightning');
+$night-partly-cloudy: if(variable_exists('night-partly-cloudy'), append($night-partly-cloudy, 'night-partly-cloudy'), 'night-partly-cloudy');
+$night-rain: if(variable_exists('night-rain'), append($night-rain, 'night-rain'), 'night-rain');
+$night-rain-mix: if(variable_exists('night-rain-mix'), append($night-rain-mix, 'night-rain-mix'), 'night-rain-mix');
+$night-rain-wind: if(variable_exists('night-rain-wind'), append($night-rain-wind, 'night-rain-wind'), 'night-rain-wind');
+$night-showers: if(variable_exists('night-showers'), append($night-showers, 'night-showers'), 'night-showers');
+$night-sleet: if(variable_exists('night-sleet'), append($night-sleet, 'night-sleet'), 'night-sleet');
+$night-sleet-storm: if(variable_exists('night-sleet-storm'), append($night-sleet-storm, 'night-sleet-storm'), 'night-sleet-storm');
+$night-snow: if(variable_exists('night-snow'), append($night-snow, 'night-snow'), 'night-snow');
+$night-snow-thunderstorm: if(variable_exists('night-snow-thunderstorm'), append($night-snow-thunderstorm, 'night-snow-thunderstorm'), 'night-snow-thunderstorm');
+$night-snow-wind: if(variable_exists('night-snow-wind'), append($night-snow-wind, 'night-snow-wind'), 'night-snow-wind');
+$night-sprinkle: if(variable_exists('night-sprinkle'), append($night-sprinkle, 'night-sprinkle'), 'night-sprinkle');
+$night-storm-showers: if(variable_exists('night-storm-showers'), append($night-storm-showers, 'night-storm-showers'), 'night-storm-showers');
+$night-thunderstorm: if(variable_exists('night-thunderstorm'), append($night-thunderstorm, 'night-thunderstorm'), 'night-thunderstorm');
+$lunar-eclipse: if(variable_exists('lunar-eclipse'), append($lunar-eclipse, 'lunar-eclipse'), 'lunar-eclipse');
+$stars: if(variable_exists('stars'), append($stars, 'stars'), 'stars');
+$night-cloudy-high: if(variable_exists('night-cloudy-high'), append($night-cloudy-high, 'night-cloudy-high'), 'night-cloudy-high');

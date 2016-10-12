@@ -3,56 +3,57 @@
  *  Day Time Icons
  */
 
-@include stack-icon-class(build-selector($prefix, 'day-sunny'), $sunny);
+@include stack-icon-class(build-class-selectors($prefix, $day-sunny), $sunny);
 
-@include stack-icon-class(build-selector($prefix, 'day-cloudy'), $sun-behind, $cloud-whole);
+@include stack-icon-class(build-class-selectors($prefix, $day-cloudy), $sun-behind, $cloud-whole);
 
-@include stack-icon-class(build-selector($prefix, 'day-cloudy-gusts'), $sun-behind-nudge, $cloud-left, $gust);
+@include stack-icon-class(build-class-selectors($prefix, $day-cloudy-gusts), $sun-behind-nudge, $cloud-left, $gust);
 
-@include stack-icon-class(build-selector($prefix, 'day-cloudy-windy'), $sun-behind-nudge, $cloud-left, $wind);
+@include stack-icon-class(build-class-selectors($prefix, $day-cloudy-windy), $sun-behind-nudge, $cloud-left, $wind);
 
-@include stack-icon-class(build-selector($prefix, 'day-fog'), $sun-behind-nudge, $cloud-top, $fog);
+@include stack-icon-class(build-class-selectors($prefix, $day-fog), $sun-behind-nudge, $cloud-top, $fog);
 
-@include stack-icon-class(build-selector($prefix, 'day-hail'), $sun-behind, $cloud-center, $hail);
+@include stack-icon-class(build-class-selectors($prefix, $day-hail), $sun-behind, $cloud-center, $hail);
 
-@include stack-icon-class(build-selector($prefix, 'day-lightning'), $sun-behind, $cloud-center, $lightning);
+@include stack-icon-class(build-class-selectors($prefix, $day-lightning), $sun-behind, $cloud-center, $lightning);
 
-@include stack-icon-class(build-selector($prefix, 'day-rain'), $sun-behind, $cloud-center, $rain);
+@include stack-icon-class(build-class-selectors($prefix, $day-rain), $sun-behind, $cloud-center, $rain);
 
-@include stack-icon-class(build-selector($prefix, 'day-rain-mix'), $sun-behind, $cloud-center, $rain-mix);
+@include stack-icon-class(build-class-selectors($prefix, $day-rain-mix), $sun-behind, $cloud-center, $rain-mix);
 
-@include stack-icon-class(build-selector($prefix, 'day-rain-wind'), $sun-behind, $cloud-center, $rain-wind);
+@include stack-icon-class(build-class-selectors($prefix, $day-rain-wind), $sun-behind, $cloud-center, $rain-wind);
 
-@include stack-icon-class(build-selector($prefix, 'day-showers'), $sun-behind, $cloud-center, $rain-showers);
+@include stack-icon-class(build-class-selectors($prefix, $day-showers), $sun-behind, $cloud-center, $rain-showers);
 
-@include stack-icon-class(build-selector($prefix, 'day-sleet'), $sun-behind, $cloud-center, $sleet);
+@include stack-icon-class(build-class-selectors($prefix, $day-sleet), $sun-behind, $cloud-center, $sleet);
 
-@include stack-icon-class(build-selector($prefix, 'day-sleet-storm'), $sun-behind, $cloud-center, $sleet);
+@include stack-icon-class(build-class-selectors($prefix, $day-sleet-storm), $sun-behind, $cloud-center, $sleet);
 
-@include stack-icon-class(build-selector($prefix, 'day-snow'), $sun-behind, $cloud-center, $snow);
+@include stack-icon-class(build-class-selectors($prefix, $day-snow), $sun-behind, $cloud-center, $snow);
 
-@include stack-icon-class(build-selector($prefix, 'day-snow-thunderstorm'), $sun-behind, $cloud-center, $snow, $lightning-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $day-snow-thunderstorm), $sun-behind, $cloud-center, $snow, $lightning-nudge);
 
-@include stack-icon-class(build-selector($prefix, 'day-snow-wind'), $sun-behind, $cloud-center, $snow-wind);
+@include stack-icon-class(build-class-selectors($prefix, $day-snow-wind), $sun-behind, $cloud-center, $snow-wind);
 
-@include stack-icon-class(build-selector($prefix, 'day-sprinkle'), $sun-behind, $cloud-center, $rain-sprinkles);
+@include stack-icon-class(build-class-selectors($prefix, $day-sprinkle), $sun-behind, $cloud-center, $rain-sprinkles);
 
-@include stack-icon-class(build-selector($prefix, 'day-storm-showers'), $sun-behind, $cloud-center, $rain-showers-nudge, $lightning-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $day-storm-showers), $sun-behind, $cloud-center, $rain-showers-nudge, $lightning-nudge);
 
-@include stack-icon-class(build-selector($prefix, 'day-thunderstorm'), $sun-behind, $cloud-center, $rain-nudge, $lightning-nudge);
+@include stack-icon-class(build-class-selectors($prefix, $day-thunderstorm), $sun-behind, $cloud-center, $rain-nudge, $lightning-nudge);
 
-@include stack-icon-class(build-selector($prefix, 'day-sunny-overcast'), $sun-overcast, $cloud-overcast);
+@include stack-icon-class(build-class-selectors($prefix, $day-sunny-overcast), $sun-overcast, $cloud-overcast);
 
-@include stack-icon-class(build-selector($prefix, 'day-haze'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $day-haze), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'day-hot'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $day-hot), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'day-light-wind'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $day-light-wind), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'day-light-wind'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $day-light-wind), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'day-windy'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $day-windy), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'solar-eclipse'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $solar-eclipse), $unknown);
 
-@include stack-icon-class(build-selector($prefix, 'day-cloudy-high'), $unknown);
+@include stack-icon-class(build-class-selectors($prefix, $day-cloudy-high), $unknown);
+

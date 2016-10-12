@@ -1,26 +1,33 @@
-.wi-day-sunny:before {content: $day-sunny;}
-.wi-day-cloudy:before {content: $day-cloudy;}
-.wi-day-cloudy-gusts:before {content: $day-cloudy-gusts;}
-.wi-day-cloudy-windy:before {content: $day-cloudy-windy;}
-.wi-day-fog:before {content: $day-fog;}
-.wi-day-hail:before {content: $day-hail;}
-.wi-day-haze:before {content: $day-haze;}
-.wi-day-lightning:before {content: $day-lightning;}
-.wi-day-rain:before {content: $day-rain;}
-.wi-day-rain-mix:before {content: $day-rain-mix;}
-.wi-day-rain-wind:before {content: $day-rain-wind;}
-.wi-day-showers:before {content: $day-showers;}
-.wi-day-sleet:before {content: $day-sleet;}
-.wi-day-sleet-storm:before {content: $day-sleet-storm;}
-.wi-day-snow:before {content: $day-snow;}
-.wi-day-snow-thunderstorm:before {content: $day-snow-thunderstorm;}
-.wi-day-snow-wind:before {content: $day-snow-wind;}
-.wi-day-sprinkle:before {content: $day-sprinkle;}
-.wi-day-storm-showers:before {content: $day-storm-showers;}
-.wi-day-sunny-overcast:before {content: $day-sunny-overcast;}
-.wi-day-thunderstorm:before {content: $day-thunderstorm;}
-.wi-day-windy:before {content: $day-windy;}
-.wi-solar-eclipse:before {content: $solar-eclipse;}
-.wi-hot:before {content: $hot;}
-.wi-day-cloudy-high:before {content: $day-cloudy-high;}
-.wi-day-light-wind:before {content: $day-light-wind;}
+/*!
+ * Day Time Icon Classes
+ *
+ * Standard Single Glyph Icon
+ *
+ */
+
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-sunny), $day-sunny-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-cloudy), $day-cloudy-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-cloudy-gusts), $day-cloudy-gusts-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-cloudy-windy), $day-cloudy-windy-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-fog), $day-fog-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-hail), $day-hail-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-haze), $day-haze-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-lightning), $day-lightning-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-rain), $day-rain-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-rain-mix), $day-rain-mix-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-rain-wind), $day-rain-wind-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-showers), $day-showers-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-sleet), $day-sleet-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-sleet-storm), $day-sleet-storm-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-snow), $day-snow-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-snow-thunderstorm), $day-snow-thunderstorm-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-snow-wind), $day-snow-wind-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-sprinkle), $day-sprinkle-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-storm-showers), $day-storm-showers-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-sunny-overcast), $day-sunny-overcast-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-thunderstorm), $day-thunderstorm-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-windy), $day-windy-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $solar-eclipse), $solar-eclipse-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $hot), $hot-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-cloudy-high), $day-cloudy-high-icon);
+@include wi-icon-class(get-selectors($wi-css-prefix, $day-light-wind), $day-light-wind-icon);
