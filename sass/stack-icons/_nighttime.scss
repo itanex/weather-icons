@@ -3,7 +3,7 @@
  *  Night Time Icons
  */
 
-@include stack-icon-class(build-class-selectors($prefix, $night-clear), $unknown-map);
+@include stack-icon-class(build-class-selectors($prefix, $night-clear), $moon-clear-map);
 
 @include stack-icon-class(build-class-selectors($prefix, $stars), $unknown-map);
 

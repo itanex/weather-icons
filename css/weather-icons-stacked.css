@@ -646,8 +646,8 @@
  *  Night Time Icons
  */
 .wi-stk-night-clear::before {
-  color: #000000;
-  content: "---"; }
+  color: #bbb;
+  content: ""; }
 
 .wi-stk-stars::before {
   color: #000000;
